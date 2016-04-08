@@ -1,0 +1,204 @@
+<section id="content">
+  <div class="container">
+
+    <ol class="breadcrumb">
+      <li><a href="{:U('Home/Index/index')}">背包客</a></li>
+      <li><a href="{:U('Home/Goods/category')}?tid={$tid}">{$typename}</a></li>
+      <li>{$goodsmsg.gname}</li>
+    </ol>
+
+    <div class="row">
+      <div class="col-sm-5">
+
+        <div id="product-large" class="owl-carousel">
+          <volist name="goodsimgsarr" id="bimgvo">
+            <div class="item"><img src="__PUBLIC__/pic/{$bimgvo}"></div>
+          </volist>
+        </div>
+        <div id="product-thumb" class="owl-carousel">
+          <volist name="goodsimgsarr" id="bimgvo">
+            <div class="item"><img src="__PUBLIC__/pic/{$bimgvo}"></div>
+          </volist>
+        </div>
+
+      </div>
+      <div class="col-sm-7 summary entry-summary">
+
+        <h1 class="product_title">{$goodsmsg.gname}</h1>
+
+        <p class="price">
+          <sup>￥</sup><span class="amount">{$goodsmsg.gprice}</span>&nbsp;&nbsp;<strike><sup>￥</sup>{$goodsmsg.goldprice}</strike>
+        </p>
+
+        <h3>描述</h3>
+
+        <p>{$goodsmsg.gdetail}</p>
+
+        <hr>
+
+        <h3>联系信息</h3>
+
+        <div class="variations">
+          <div class="row">
+            <div class="col-sm-6">
+              <span>卖家：</span><span>{$goodsmsg.gadname}</span>
+            </div>
+            <div class="col-sm-6">
+              <span>联系方式：</span><span>{$goodsmsg.gadtel}</span>
+            </div>
+          </div>
+        </div>
+        <div class="variations">
+          <div class="row">
+            <div class="col-sm-6">
+              <span>发布者：</span><span><a href="{:U('Home/Goods/user')}?uid={$uname.uid}">{$uname.uname}</a></span>
+            </div>
+            <div class="col-sm-6">
+              <span>发布日期</span><span>{$goodsmsg.gcreate_time}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quantity buttons_added">
+          <button class="minus"><i class="fa fa-minus"></i></button>
+          <input type="number" id="Qty" size="4" class="qty text form-control" title="Qty" value="1" name="qty" step="1">
+          <button class="plus"><i class="fa fa-plus"></i></button>
+        </div>
+
+        <a href="javascript:addCart({$goodsmsg.gid});" class="btn btn-config btn-lg" id="add-to-cart">加入爱包</a>
+        
+      </div>
+    </div>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs product-tabs">
+      <li class="active"><a href="#description" data-toggle="tab">描述</a></li>
+      <li><a href="#reviews" data-toggle="tab">评论 (3)</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane active" id="description">
+        <p>{$goodsmsg.gdetail}</p>
+      </div>
+      <div class="tab-pane" id="reviews">
+
+        <div id="reviews">
+          <ol class="commentlist">
+
+            <li class="comment">
+              <div class="comment_container">
+                <img src="http://placehold.it/64x64" class="avatar">
+                <div class="comment-text">
+                  <div class="start-rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  </div>
+                  <h5 class="meta">James Koster <span>&mdash; June 7, 2013</span></h5>                
+                  <p>Really happy with this print. The colors are great, and the paper quality is good too.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="comment">
+              <div class="comment_container">
+                <img src="http://placehold.it/64x64" class="avatar">
+                <div class="comment-text">
+                  <div class="start-rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  </div>
+                  <h5 class="meta">Cobus Bester <span>&mdash; June 7, 2013</span></h5>                
+                  <p>You only get the picture, not the person holding it, something they don’t mention in the description, now I’ve got to find my own person.</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="comment">
+              <div class="comment_container">
+                <img src="http://placehold.it/64x64" class="avatar">
+                <div class="comment-text">
+                  <div class="start-rating">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                  </div>
+                  <h5 class="meta">Stuart <span>&mdash; June 7, 2013</span></h5>                
+                  <p>This is a fantastic quality print and is happily hanging framed on my wall now.</p>
+                </div>
+              </div>
+            </li>
+
+          </ol>
+        </div>
+
+        <hr>
+
+        <div id="review_form">
+          <h3 id="reply-title" class="comment-reply-title">Add a Review</h3>
+          <form action="#" id="commentform" class="comment-form">
+            <div class="row">
+              <p class="comment-form-author col-sm-4">
+                <input type="text" placeholder="Author *" class="form-control">
+              </p>
+              <p class="comment-form-email col-sm-4">
+                <input type="email" placeholder="Email *" class="form-control">
+              </p>
+              <p class="comment-form-rating col-sm-4">
+                <select class="form-control">
+                  <option value="0">Your Rating</option>
+                  <option value="0">Perfect &mdash; 5*</option>
+                  <option value="0">Good &mdash; 4*</option>
+                  <option value="0">Average &mdash; 3*</option>
+                  <option value="0">Not That Bad &mdash; 2*</option>
+                  <option value="0">Very Poor &mdash; 1*</option>
+                </select>
+              </p>                  
+            </div>
+            <p class="comment-form-comment"><textarea name="review" id="review" class="form-control" cols="30" rows="5" placeholder="Your Review"></textarea></p>
+            <p class="form-submit"><input type="submit" class="btn btn-config btn-lg" name="proceed" value="Post Review"></p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="related">
+      <h2>You May Also Like</h2>
+      <ul class="products row">
+        <volist name="goodsmsg4" id="vo">
+          <li class="col-sm-3 first">
+            <div class="product">
+              <div class="thumbnail">
+              <a href="product.html"><img src="__PUBLIC__/pic/{$vo.gimgarray}" alt=""></a>
+                <a href="javascript:addCart({$vo.gid});" class="add-to-cart" title="Add to Cart">
+                  <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-shopping-cart  fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </div>
+              <hr>
+              <div class="title">
+                <h3><a href="#">{$vo.gname}</a></h3>
+                <p>by {$vo.gadname}</p>
+              </div>
+              <span class="price">￥{$vo.gprice}</span>
+            </div>
+          </li>
+        </volist>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== CONTENT END ========== -->

@@ -1,0 +1,27 @@
+[ 2016-04-06T18:19:26+08:00 ] 127.0.0.1 /Public/image/user/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-06T18:21:22+08:00 ] 127.0.0.1 /Manager_Detail/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+ERR: 无法加载模块:Manager_Detail
+
+[ 2016-04-06T18:21:41+08:00 ] 127.0.0.1 /Manager_Detail/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+ERR: 无法加载模块:Manager_Detail
+
+[ 2016-04-06T21:28:09+08:00 ] 127.0.0.1 /Public/css/grabbing.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+ERR: 无法加载模块:Public
+
+[ 2016-04-06T22:17:46+08:00 ] 127.0.0.1 /Public/css/grabbing.png
+ERR: 无法加载模块:Public
+

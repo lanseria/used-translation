@@ -1,0 +1,84 @@
+    <!-- ========== SLIDER START ========== -->
+
+    <section id="slider">
+      <div id="bs-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#bs-carousel" data-slide-to="1"></li>
+          <li data-target="#bs-carousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active"><a href="product.html"><img src="__PUBLIC__/img/images/ad/ad-1.png" alt=""></a></div>
+          <div class="item"><a href="product.html"><img src="__PUBLIC__/img/images/ad/ad-2.png" alt=""></a></div>
+          <div class="item"><a href="product.html"><img src="__PUBLIC__/img/images/ad/ad-3.png" alt=""></a></div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#bs-carousel" data-slide="prev">
+          <i class="fa fa-angle-left"></i>
+          <!--span class="glyphicon glyphicon-chevron-left"></span-->
+        </a>
+        <a class="right carousel-control" href="#bs-carousel" data-slide="next">
+          <i class="fa fa-angle-right"></i>
+          <!--span class="glyphicon glyphicon-chevron-right"></span-->
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== SLIDER END ========== -->
+
+    <section id="content">
+      <div class="container">
+        <div class="products-carousel products-small products">
+          <div class="banner">
+            <img src="__PUBLIC__/img/images/30-off.png" alt="">
+          </div>
+          <div class="carousel">
+          <volist name="newgoodsmsg" id="newvo" empty="暂时没有数据">
+              <div>
+                <div class="newproduct">
+                  <div class="thumbnail">
+                    <a href="{:U('/Home/Goods/product')}?gid={$newvo.gid}"><img alt="" style="width: 204px;" src="__PUBLIC__/pic/{$newvo.gimgarray}"></a>
+                  </div>
+                  <hr>
+                  <div class="title">
+                    <h3><a href="#">{$newvo.gname}</a></h3>
+                    <p>by {$newvo.gadname}</p>
+                  </div>
+                </div>
+              </div>
+            </volist>
+          </div>
+
+        </div>
+
+        <h2 class="align-center unbranded">看看别人的包</h2>
+        <div class="gap-25"></div>
+
+        <ul class="products row">
+          <volist name="goodsmsg" id="vo" empty="暂时没有数据">
+            <li class="col-sm-3">
+              <div class="product">
+                <div class="thumbnail">
+                  <a href="{:U('/Home/Goods/product')}?gid={$vo.gid}"><img src="__PUBLIC__/pic/{$vo.gimgarray}" alt=""></a>
+                  <a href="javascript:addCart({$vo.gid});" class="add-to-cart" title="Add to Cart">
+                    <span class="fa-stack fa-2x">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-shopping-cart  fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </div>
+                <hr>
+                <div class="title">
+                  <h3><a href="#">{$vo.gname}</a></h3>
+                  <p>by {$vo.gadname}</p>
+                </div>
+                <span class="price">￥{$vo.gprice}</span>
+              </div>
+            </li>
+          </volist>
+        </ul>
+      </div>
+    </section>

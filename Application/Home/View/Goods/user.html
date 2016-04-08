@@ -1,0 +1,88 @@
+<section id="content">
+  <div class="container">
+
+    <ol class="breadcrumb">
+      <li><a href="{:U('Home/Index/index')}">背包客</a></li>
+      <li><a href="{:U('Home/Goods/user')}?uid={$uname.uid}">大家</a></li>
+      <li>{$uname.uname}</li>
+    </ol>
+
+    <div class="row">
+      <div class="col-sm-3 sidebar">
+
+        <aside class="widget widget_product_categories">
+          <h3 class="widget-title">Categories:</h3>
+          <ul>
+            <li>
+              <a href="#">学习资料</a>
+              <ul>
+                <li><a href="{:U('Home/Goods/category')}?tid=1">语言类</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=2">理工科类</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=3">文学类</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=4">闲暇类</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">衣服/化妆</a>
+              <ul>
+                <li><a href="{:U('Home/Goods/category')}?tid=5">男生</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=6">女生</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=7">宝宝</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=8">大叔</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">数码配件</a>
+              <ul>
+              <li><a href="{:U('Home/Goods/category')}?tid=9">笔记本</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=10">通讯类</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=11">摄影</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=12">配件</a></li>
+              </ul>
+            </li>
+            <li>
+            <a href="#">娱乐售出</a>
+             <ul>
+                <li><a href="{:U('Home/Goods/category')}?tid=13">电影票</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=14">演唱会门票</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=15">免费票</a></li>
+                <li><a href="{:U('Home/Goods/category')}?tid=16">其他票</a></li>
+              </ul>
+            </li>
+            <li><a href="{:U('Home/Goods/category')}?tid=17">其他</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <div class="col-sm-9">
+
+        <ul class="products row">
+          <volist name="goodsmsg" id="vo" empty="暂时没有数据">
+            <li class="col-sm-4 first">
+              <div class="product">
+                <div class="thumbnail">
+                  <a href="{:U('/Home/Goods/product')}?gid={$vo.gid}"><img src="__PUBLIC__/pic/{$vo.gimgarray}" alt=""></a>
+                  <a href="javascript:addCart({$vo.gid});" class="add-to-cart" title="Add to Cart">
+                    <span class="fa-stack fa-2x">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-shopping-cart  fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                </div>
+                <hr>
+                <div class="title">
+                  <h3><a href="#">{$vo.gname}</a></h3>
+                  <p>by {$vo.gadname}</p>
+                </div>
+                <span class="price">￥{$vo.gprice}</span>
+              </div>
+            </li>
+          </volist>
+        </ul>
+        
+      </div>
+
+    </div>
+
+  </div>
+</section>

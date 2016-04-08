@@ -1,0 +1,72 @@
+<section id="content">
+  <div class="container">
+
+    <ol class="breadcrumb">
+      <li><a href="{:U('Home/Index/index')}">背包客</a></li>
+      <li>爱包</li>
+    </ol>
+
+    <h1 class="page-title">爱包</h1>
+
+    <table class="shop_table cart table-striped">
+      <thead>
+        <tr>
+          <th class="product-remove">删</th>
+          <th class="product-desc">宝贝介绍</th>
+          <th class="product-size visible-md visible-lg">包人</th>
+          <th class="product-color visible-md visible-lg">时间</th>
+          <th class="product-qty">数量</th>
+          <th class="product-price">价格</th>
+        </tr>
+      </thead>
+      <tbody>
+      <volist name="bcartmsg" id="bcartvo" empty="$empty">
+          <tr class="cart_item">
+            <td class="product-remove"><a href="{:U('/Home/Goods/deleteC')}?cid={$bcartvo.cid}" class="remove"><i class="fa fa-times-circle fa-2x"></i></a></td>
+            <td class="product-desc">
+              <dl>
+                <dt class="hidden-xs"><img style="width: 150px;" src="__PUBLIC__/pic/{$bcartvo.gimgarray}" alt=""></dt>
+                <dd>
+                  <h3>{$bcartvo.gname}</h3>
+                  <p class="hidden-xs">{$bcartvo.gdetail}</p>
+                </dd>
+              </dl>
+            </td>
+            <td class="product-size visible-md visible-lg">
+              <h3>{$bcartvo.gadname}</h3>
+            </td>
+            <td class="product-color visible-md visible-lg">
+              <p>{$bcartvo.ccreate_time}</p>
+            </td>
+            <td class="product-qty">
+              <div class="quantity buttons_added">
+                <button class="minus"><i class="fa fa-minus"></i></button>
+                <input type="number" size="4" class="qty text form-control" title="Qty" value="{$bcartvo.cnum}" name="qty" step="1">
+                <button class="plus"><i class="fa fa-plus"></i></button>
+              </div>
+            </td>
+            <td class="product-price">
+              <h3>￥{$bcartvo.gprice}</h3>
+            </td>
+          </tr>
+        </volist>
+      </tbody>
+    </table>
+
+    <div class="cart-collaterals">
+      <table class="totals">
+        <tbody>
+          <tr class="cart-subtotal">
+            <th>大致花费</th>
+            <td><span class="amount">￥{$sumPrice}</span></td>
+          </tr>
+          <tr class="order-total">
+            <th>总共花费</th>
+            <td><span class="amount">￥{$sumPrice}</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>

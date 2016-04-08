@@ -1,0 +1,77 @@
+<div class="main-content">
+	<div class="breadcrumbs" id="breadcrumbs">
+		<script type="text/javascript">
+			try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+		</script>
+
+		<ul class="breadcrumb">
+			<li>
+				<i class="icon-home home-icon"></i>
+				<a href="#">Dashboard</a>
+			</li>
+			<li class="active">修改宝贝信息</li>
+		</ul><!-- .breadcrumb -->
+
+		<div class="nav-search" id="nav-search">
+			<form class="form-search">
+				<span class="input-icon">
+					<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+					<i class="icon-search nav-search-icon"></i>
+				</span>
+			</form>
+		</div><!-- #nav-search -->
+	</div>
+
+	<div class="page-content">
+		<div class="page-header">
+			<h1>
+				修改宝贝信息
+				<small>
+					<i class="icon-double-angle-right"></i>
+					快发布你手边的宝贝吧
+				</small>
+			</h1>
+		</div><!-- /.page-header -->
+
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- PAGE CONTENT BEGINS -->
+
+				<div class="alert alert-info">
+					<i class="icon-hand-right"></i>
+
+					上传你的二手图片时，请注意下图片数量，现支持5张图哦！！
+					<button class="close" data-dismiss="alert">
+						<i class="icon-remove"></i>
+					</button>
+				</div>
+
+				<div class="demo">
+					<form id="uploadForm" action="{:U('Dashboard/Goods/updategood')}" method="post" enctype="multipart/form-data">
+						<div class="">
+							<input type="hidden" name="gid" value="{$goodmsg.gid}" />
+							<div class=""><span class="">物品名称:</span><input type="text" name="gname" class="" value="{$goodmsg.gname}"></div>
+							<div class=" ">
+								<span class="">物品分类:</span>
+								<div class="styled-select">
+									<select id="country" name="gtypeid" class="frm-field required">
+										<option value="0">请选择</option>
+										<volist name="typemsg" id="vo" empty="暂时没有数据">
+											<option value="{$vo.tid}">{$vo.tname}</option>
+										</volist>
+									</select>
+								</div>
+							</div>
+							<div class="fabu jz"><span class="">报价:</span><input type="text" name="gprice" class="" value="{$goodmsg.gprice}"><span class="">元</span></div>
+							<div class="fabu jz"><span class="">原价:</span><input type="text" name="goldprice" class="" value="{$goodmsg.goldprice}"><span class="">元(必填)</span></div>
+							<div class="fabu"><span class="">卖家称呼:</span><input type="text" name="gadname" class="" placeholder="例：王同学" value="{$goodmsg.gadname}"></div>
+							<div class="fabu"><span class="">联系方式:</span><input type="text" name="gadtel" class="kuang4" placeholder="手机/QQ/微信均可" value="{$goodmsg.gadtel}"></div>
+							<div class="liuyan"><span class="">卖家留言:</span><textarea class="" name="gdetail" cols="50" rows="5" placeholder="建议写对物品的描述或出售原因">{$goodmsg.gdetail}</textarea></div>
+							<button type="submit" class="btn">确认修改</button>
+						</div>
+					</form>
+				</div><!-- PAGE CONTENT ENDS -->
+			</div><!-- /.col -->
+		</div><!-- /.row -->
+	</div><!-- /.page-content -->
+</div><!-- /.main-content -->

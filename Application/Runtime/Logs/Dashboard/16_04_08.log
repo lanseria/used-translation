@@ -1,0 +1,1666 @@
+[ 2016-04-08T12:58:13+08:00 ] 127.0.0.1 /Dashboard/Index/index.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2016-04-08T12:58:17+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001318s ]
+
+[ 2016-04-08T13:00:37+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2016-04-08T13:00:45+08:00 ] 127.0.0.1 /Dashboard/Index/index.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001529s ]
+
+[ 2016-04-08T13:01:46+08:00 ] 127.0.0.1 /Dashboard/Index/index.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2016-04-08T13:02:00+08:00 ] 127.0.0.1 /Dashboard/Goods/see.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0426s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `b_goods` WHERE `gis_selloff` = 0 ORDER BY gcreate_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 110 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000948s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001027s ]
+
+[ 2016-04-08T13:04:13+08:00 ] 127.0.0.1 /Dashboard/Goods/see.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `b_goods` WHERE `gis_selloff` = 0 ORDER BY gcreate_time desc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 110 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2016-04-08T13:04:16+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-04-08T13:05:33+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-04-08T13:06:27+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2016-04-08T13:06:39+08:00 ] 127.0.0.1 /Dashboard/Index/about.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112415s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000609s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2016-04-08T13:06:41+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000237s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-04-08T13:06:42+08:00 ] 127.0.0.1 /Dashboard/Goods/see.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_goods` WHERE `gis_selloff` = 0 ORDER BY gcreate_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 110 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2016-04-08T13:06:42+08:00 ] 127.0.0.1 /Dashboard/Index/index.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2016-04-08T13:06:46+08:00 ] 127.0.0.1 /Dashboard/Goods/see.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `b_goods` WHERE `gis_selloff` = 0 ORDER BY gcreate_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 110 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2016-04-08T13:06:47+08:00 ] 127.0.0.1 /Dashboard/Index/index.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2016-04-08T13:07:00+08:00 ] 127.0.0.1 /Dashboard/Index/index.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2016-04-08T13:07:01+08:00 ] 127.0.0.1 /Dashboard/Goods/see.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `b_goods` WHERE `gis_selloff` = 0 ORDER BY gcreate_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 110 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001261s ]
+
+[ 2016-04-08T13:07:02+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2016-04-08T13:07:04+08:00 ] 127.0.0.1 /Dashboard/Index/about.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000623s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2016-04-08T13:07:24+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007689s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000647s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2016-04-08T13:07:24+08:00 ] 127.0.0.1 /Dashboard/Goods/see.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `b_goods` WHERE `gis_selloff` = 0 ORDER BY gcreate_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 110 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000612s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2016-04-08T13:15:44+08:00 ] 127.0.0.1 /Dashboard/Goods/see.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `b_goods` WHERE `gis_selloff` = 0 ORDER BY gcreate_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 110 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-04-08T13:15:48+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 144 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-04-08T13:17:51+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 144 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000737s ]
+
+[ 2016-04-08T13:26:52+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-04-08T13:27:24+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2016-04-08T13:27:32+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000673s ]
+
+[ 2016-04-08T13:27:51+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005132s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+
+[ 2016-04-08T13:28:36+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000839s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2016-04-08T13:28:45+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001211s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0602s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `b_goods` SET `gname`='女生卡通动物头饰',`gtypeid`='6',`gprice`='10.00',`goldprice`='20.00',`gadname`='爱囚',`gadtel`='15456787656',`gdetail`='布朗熊兔发箍韩国卖萌发饰可爱头饰时尚头箍手工发夹边' WHERE `gid` = 0 [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000244s ]
+
+[ 2016-04-08T13:29:30+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0032s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `b_goods` SET `gname`='女生卡通动物头饰',`gtypeid`='6',`gprice`='10.00',`goldprice`='20.00',`gadname`='爱囚',`gadtel`='15456787656',`gdetail`='布朗熊兔发箍韩国卖萌发饰可爱头饰时尚头箍手工发夹边' WHERE `gid` = 0 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001104s ]
+
+[ 2016-04-08T13:30:36+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `b_goods` SET `gname`='女生卡通动物头饰',`gtypeid`='6',`gprice`='10.00',`goldprice`='20.00',`gadname`='爱囚',`gadtel`='15456787656',`gdetail`='布朗熊兔发箍韩国卖萌发饰可爱头饰时尚头箍手工发夹边' WHERE `gid` = 0 [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-04-08T13:31:10+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0829s ]
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `b_goods` SET `gname`='女生卡通动物头饰',`gtypeid`='6',`gprice`='10.00',`goldprice`='20.00',`gadname`='爱囚',`gadtel`='15456787656',`gdetail`='布朗熊兔发箍韩国卖萌发饰可爱头饰时尚头箍手工发夹边' WHERE `gid` = 9 [ RunTime:0.0730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-04-08T13:31:11+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-04-08T13:31:18+08:00 ] 127.0.0.1 /Dashboard/Goods/see.html?uid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_goods` WHERE `gis_selloff` = 0 ORDER BY gcreate_time desc  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 11 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 110 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\c9c52909c6ddb54c5a19a95ecd92ae37.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000726s ]
+
+[ 2016-04-08T13:31:22+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000679s ]
+
+[ 2016-04-08T13:32:04+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000300s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2016-04-08T13:32:48+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2016-04-08T13:33:01+08:00 ] 127.0.0.1 /Dashboard/Goods/updategood.html?gid=9
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0376s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 9  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 112 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\9e865065f20a4c595a5c6d336f439bf5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000678s ]
+
+[ 2016-04-08T13:33:06+08:00 ] 127.0.0.1 /Dashboard/Index/about.html?uid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-04-08T13:33:10+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-04-08T13:33:12+08:00 ] 127.0.0.1 /Dashboard/Index/about.html?uid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+
+[ 2016-04-08T13:33:55+08:00 ] 127.0.0.1 /Dashboard/Index/about.html?uid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000709s ]
+
+[ 2016-04-08T13:34:38+08:00 ] 127.0.0.1 /Dashboard/Index/about.html?uid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000770s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 0  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\IndexController.class.php 第 21 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\97c798c60dd140e01905b7759b9b320b.php 第 125 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000740s ]
+
+[ 2016-04-08T18:08:01+08:00 ] 127.0.0.1 /Dashboard/Index/index.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2016-04-08T18:08:03+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2016-04-08T18:08:59+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0023s ]
+NOTIC: [8] Undefined variable: gtimgstr D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 58 行.
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `b_goods` (`gname`,`gtypeid`,`gprice`,`goldprice`,`guid`,`gadname`,`gadtel`,`gimgarray`,`gtimgarray`,`gdetail`,`gcreate_time`) VALUES ('话语留声','1','20.5','30.46','1','张超','188858395625','2016-04-08/5707833acad22.png',NULL,'國立臺灣圖書館臺灣學研究中心「2014年臺灣學研究書展」以語言類書籍為主題，特別規劃「話語留聲─館藏舊籍語言類書展」，展示臺灣豐富的語言文化資源。','2016-04-08 18:08:59') [ RunTime:0.0521s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001005s ]
+
+[ 2016-04-08T18:09:00+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000641s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2016-04-08T18:09:58+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0258s ]
+NOTIC: [8] Undefined variable: gtimgstr D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 58 行.
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `b_goods` (`gname`,`gtypeid`,`gprice`,`goldprice`,`guid`,`gadname`,`gadtel`,`gimgarray`,`gtimgarray`,`gdetail`,`gcreate_time`) VALUES ('显规则潜规则','1','25.5','30','1','张超','188858395625','2016-04-08/570783767ba09.jpg',NULL,'大学生大学里应该读哪些书籍','2016-04-08 18:09:58') [ RunTime:0.0409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2016-04-08T18:09:59+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001539s ]
+
+[ 2016-04-08T18:11:35+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0457s ]
+NOTIC: [8] Undefined variable: gtimgstr D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 58 行.
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `b_goods` (`gname`,`gtypeid`,`gprice`,`goldprice`,`guid`,`gadname`,`gadtel`,`gimgarray`,`gtimgarray`,`gdetail`,`gcreate_time`) VALUES ('概率与统计（理工类）（英文版·原书第六版）','2','40','50','1','张超','188858395625','2016-04-08/570783d6e855c.jpg',NULL,'概率与统计（理工类）（英文版·原书第六版','2016-04-08 18:11:35') [ RunTime:0.0616s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2016-04-08T18:11:36+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008440s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-04-08T18:12:14+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined variable: gtimgstr D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 58 行.
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `b_goods` (`gname`,`gtypeid`,`gprice`,`goldprice`,`guid`,`gadname`,`gadtel`,`gimgarray`,`gtimgarray`,`gdetail`,`gcreate_time`) VALUES ('高等数学','2','20','30','1','张超','188858395625','2016-04-08/570783fe0b367.jpg',NULL,'刘浩荣编著的《高等数学理工类上普通高等教育数学基础课程十二五规划教材》系统全面的介绍了高等数学相关知识，本书可作为普通高等院校特别是“二本”及“三本”院校或成人 ...','2016-04-08 18:12:14') [ RunTime:0.0632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2016-04-08T18:12:15+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007894s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2016-04-08T18:13:25+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.1574s ]
+NOTIC: [8] Undefined variable: gtimgstr D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 58 行.
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `b_goods` (`gname`,`gtypeid`,`gprice`,`goldprice`,`guid`,`gadname`,`gadtel`,`gimgarray`,`gtimgarray`,`gdetail`,`gcreate_time`) VALUES ('百万英镑','3','100','200','1','张超','188858395625','2016-04-08/5707844587d58.jpg',NULL,'中文导读英文版) 经典世界文学名著','2016-04-08 18:13:25') [ RunTime:0.0746s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-04-08T18:13:26+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2016-04-08T18:15:04+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2016-04-08T18:16:14+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0641s ]
+NOTIC: [8] Undefined variable: gtimgstr D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 58 行.
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `b_goods` (`gname`,`gtypeid`,`gprice`,`goldprice`,`guid`,`gadname`,`gadtel`,`gimgarray`,`gtimgarray`,`gdetail`,`gcreate_time`) VALUES ('Art——Design','4','150','300','1','张超','188858395625','2016-04-08/570784ee88dc7.jpg',NULL,'绚丽艺术类书籍封面设计','2016-04-08 18:16:14') [ RunTime:0.0871s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2016-04-08T18:16:16+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001248s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001022s ]
+
+[ 2016-04-08T18:17:35+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000525s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: x D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+NOTIC: [8] Undefined variable: y D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Image\Driver\Gd.class.php 第 270 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0031s ]
+NOTIC: [8] Undefined variable: gtimgstr D:\Lanseria\Documents\php\backpacker\Application\Dashboard\Controller\GoodsController.class.php 第 58 行.
+NOTIC: [8] Undefined index: validate D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\Lanseria\Documents\php\backpacker\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `b_goods` (`gname`,`gtypeid`,`gprice`,`goldprice`,`guid`,`gadname`,`gadtel`,`gimgarray`,`gtimgarray`,`gdetail`,`gcreate_time`) VALUES ('冬季男士韩版风衣','5','150','350.5','1','张超','188858395625','2016-04-08/5707853f47320.jpg',NULL,'以棉男装冬季男士韩版风衣潮男纯色中长款外套男生英伦','2016-04-08 18:17:35') [ RunTime:0.0569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000512s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2016-04-08T18:17:36+08:00 ] 127.0.0.1 /Dashboard/Goods/publiced.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `b_type`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: gac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 110 行.
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 118 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\b7095e4cb86ee6f4fc23345c13d4528c.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2016-04-08T23:52:13+08:00 ] 127.0.0.1 /Dashboard/Index/index.html?uid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000589s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: cac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 118 行.
+NOTIC: [8] Undefined variable: fac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 125 行.
+NOTIC: [8] Undefined variable: aac D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Dashboard\a6aea171ad06c649ad5b6850252b68d5.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001475s ]
+
