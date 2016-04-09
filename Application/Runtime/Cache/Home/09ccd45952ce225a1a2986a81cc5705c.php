@@ -54,7 +54,7 @@
           <div class="collapse navbar-collapse top-nav">
             <ul class="nav navbar-nav">
               <li><a href="<?php echo U('Home/Index/about');?>">关于</a></li>
-              <!--<li><a href="<?php echo U('Home/Index/blog');?>">博客</a></li>-->
+              <li><a href="<?php echo U('Home/Index/blog');?>">博客</a></li>
               <li><a href="<?php echo U('Home/Index/contact');?>">联系我们</a></li>
               
               <?php if(isset($_SESSION['logineduser'])): ?><li><a href="<?php echo U('/Dashboard/Index/index');?>?uid=<?php echo (session('logineduserid')); ?>">欢迎您,<?php echo (session('logineduser')); ?>!</a></li>
@@ -135,7 +135,7 @@
   <div class="container">
 
     <ol class="breadcrumb">
-      <li><a href="<?php echo U('Home/Index/index');?>">背包客</a></li>
+      <li><a href="#">Home</a></li>
       <li>关于</li>
     </ol>
 

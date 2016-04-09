@@ -145,7 +145,7 @@
       <thead>
         <tr>
           <th class="product-remove">删</th>
-          <th class="product-desc">宝贝介绍(如需交易请点击图片，联系宝贝主人)</th>
+          <th class="product-desc">宝贝介绍</th>
           <th class="product-size visible-md visible-lg">包人</th>
           <th class="product-color visible-md visible-lg">时间</th>
           <th class="product-qty">数量</th>
@@ -153,15 +153,11 @@
         </tr>
       </thead>
       <tbody>
-        <?php if(is_array($bcartmsg)): $i = 0; $__LIST__ = $bcartmsg;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$bcartvo): $mod = ($i % 2 );++$i;?><tr class="cart_item">
+      <?php if(is_array($bcartmsg)): $i = 0; $__LIST__ = $bcartmsg;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$bcartvo): $mod = ($i % 2 );++$i;?><tr class="cart_item">
             <td class="product-remove"><a href="<?php echo U('/Home/Goods/deleteC');?>?cid=<?php echo ($bcartvo["cid"]); ?>" class="remove"><i class="fa fa-times-circle fa-2x"></i></a></td>
             <td class="product-desc">
               <dl>
-                <dt class="hidden-xs">
-                  <a href="<?php echo U('Home/Goods/product');?>?gid=<?php echo ($bcartvo["gid"]); ?>">
-                    <img style="width: 150px;" src="/Public/pic/<?php echo ($bcartvo["gimgarray"]); ?>" alt="">
-                  </a>
-                </dt>
+                <dt class="hidden-xs"><img style="width: 150px;" src="/Public/pic/<?php echo ($bcartvo["gimgarray"]); ?>" alt=""></dt>
                 <dd>
                   <h3><?php echo ($bcartvo["gname"]); ?></h3>
                   <p class="hidden-xs"><?php echo ($bcartvo["gdetail"]); ?></p>

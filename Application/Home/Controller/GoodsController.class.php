@@ -35,8 +35,6 @@ class GoodsController extends Controller {
 			$gid=1;
 		}
 		$goodsmsg = D('goods')->where(array('gid' => $gid))->select();
-		//增加流量次数 并延迟60秒
-        D('goods')->where(array('gid' => $gid))->setInc('gview',1,60);
 
 		$uname = D('user')->where(array('uid'=>$goodsmsg[0]['guid']))->select();
 		$this->assign('uname',$uname[0]);
@@ -48,7 +46,7 @@ class GoodsController extends Controller {
 		$type = new \Think\Model();
 		$typename = $type->query('select * from b_type where tid='.$goodsmsg[0]['gtypeid']);
 		$this->assign('typename',$typename[0]['tname']);
-		$this->assign('tid',$typename[0]['tid']);
+
 		$goodsmsg4 = D('goods')->where('gis_selloff=0')->limit(4)->select();
 		$this->assign('goodsmsg4',$goodsmsg4);
 

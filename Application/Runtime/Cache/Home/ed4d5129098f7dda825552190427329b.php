@@ -306,7 +306,7 @@
         <?php if(is_array($goodsmsg4)): $i = 0; $__LIST__ = $goodsmsg4;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="col-sm-3 first">
             <div class="product">
               <div class="thumbnail">
-              <a href="<?php echo U('Home/Goods/product');?>?gid=<?php echo ($vo["gid"]); ?>"><img src="/Public/pic/<?php echo ($vo["gimgarray"]); ?>" alt=""></a>
+              <a href="product.html"><img src="/Public/pic/<?php echo ($vo["gimgarray"]); ?>" alt=""></a>
                 <a href="javascript:addCart(<?php echo ($vo["gid"]); ?>);" class="add-to-cart" title="Add to Cart">
                   <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x"></i>

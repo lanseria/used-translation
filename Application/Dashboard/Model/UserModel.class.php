@@ -19,7 +19,7 @@ class UserModel extends Model
             'upwd',
             'require',
             '密码必须！'
-            ),
+        ),
         array(
             'uemail',
             '',
@@ -27,7 +27,7 @@ class UserModel extends Model
             0,
             'unique',
             1
-            ),
+        ),
     ); // 在新增的时候验证name字段是否唯一
       // array('value',array(1,2,3),'值的范围不正确！',2,'in'), // 当值不为空的时候判断是否在一个范围内
       // array('repassword','password','确认密码不正确',0,'confirm'), // 验证确认密码是否和密码一致
@@ -37,7 +37,7 @@ class UserModel extends Model
      */
     protected $_auto = array (
         array('upwd', 'md5', 3, 'function') , // 对password字段在新增和编辑的时候使md5函数处理
-        );
+    );
     public function getUserIdByUserName($nickname)
     {
         $cond['uemail']=$nickname;
@@ -71,12 +71,22 @@ class UserModel extends Model
         echo $this->getError();
         return false;
     }
-    public function doChangePwd($uid, $newPwd)
+
+    public function doChangePwd($nickname, $oldPwd, $newPwd)
     {
+        // 1.校验(已有)
+        if ($oldPwd == $newPwd) {
+            return false;
+        }
+        // 3.执行 q
+        if (! $this->isValidUser($nickname, $oldPwd)) {
+            return false;
+        }
+        // 4.修改
         $data['upwd'] = $newPwd;
         if($this->create($data))
         {
-            return $this->where(array('uid' => $uid))->save();
+            return $this->where(array('uemail' => $nickname))->save();
         }
     }
     public function isValidUser($nickname, $pwd)
@@ -84,7 +94,7 @@ class UserModel extends Model
         $count = $this->where(array(
             'uemail' => $nickname,
             'upwd' => md5($pwd),
-            ))->count();
+        ))->count();
         return $count;
     }
 }
