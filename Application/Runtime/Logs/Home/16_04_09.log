@@ -1021,3 +1021,1095 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
 
+[ 2016-04-09T12:34:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000467s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036244s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-04-09T12:34:52+08:00 ] 127.0.0.1 /Home/Goods/category.html?tid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0265s ]
+SQL: SELECT * FROM `b_type` WHERE `tid` = 1  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) AND `gtypeid` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\GoodsController.class.php 第 28 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined index: gtypeid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\2d4e2009b13538603a7bd8695213c8c3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2016-04-09T12:34:54+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=13
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 13  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0407s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=1 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\GoodsController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2016-04-09T12:34:56+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=10 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\GoodsController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2016-04-09T12:34:58+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 3  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=1 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\GoodsController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2016-04-09T12:35:00+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0364s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 4  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=2 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\GoodsController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-04-09T12:35:30+08:00 ] 127.0.0.1 /Home/Index/contact.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2016-04-09T12:36:26+08:00 ] 127.0.0.1 /Home/Index/contact.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2016-04-09T12:38:25+08:00 ] 127.0.0.1 /Home/Index/contact.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000688s ]
+
+[ 2016-04-09T12:38:58+08:00 ] 127.0.0.1 /Home/Index/contact.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001625s ]
+
+[ 2016-04-09T12:38:59+08:00 ] 127.0.0.1 /Home/Index/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-04-09T12:39:01+08:00 ] 127.0.0.1 /Home/Index/contact.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 67 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007672s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2016-04-09T12:39:03+08:00 ] 127.0.0.1 /Home/Index/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-04-09T12:39:46+08:00 ] 127.0.0.1 /Home/Index/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2016-04-09T12:39:49+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0269s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000691s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2016-04-09T12:40:17+08:00 ] 127.0.0.1 /Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0421s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_user` WHERE `uemail` = '564265135@qq.com' AND `upwd` = 'c6f057b86584942e415435ffb1fa93d4' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `b_user` WHERE `uemail` = '564265135@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2016-04-09T12:40:18+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.1080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2016-04-09T12:42:07+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011546s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2016-04-09T12:42:11+08:00 ] 127.0.0.1 /Home/Goods/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2016-04-09T12:44:38+08:00 ] 127.0.0.1 /Home/Goods/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2016-04-09T12:45:53+08:00 ] 127.0.0.1 /Home/Goods/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2016-04-09T12:45:56+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 7  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=5 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0268s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000479s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-04-09T12:47:09+08:00 ] 127.0.0.1 /Home/Goods/cart.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0159s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0006s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2016-04-09T12:47:12+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 7  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=5 [ RunTime:0.0001s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2016-04-09T13:22:20+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: cartmsg D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\IndexController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011492s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2016-04-09T13:22:22+08:00 ] 127.0.0.1 /Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.1333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_user` WHERE `uemail` = '564265135@qq.com' AND `upwd` = 'c6f057b86584942e415435ffb1fa93d4' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+
+[ 2016-04-09T13:22:29+08:00 ] 127.0.0.1 /Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.1289s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_user` WHERE `uemail` = '564265135@qq.com' AND `upwd` = '698d51a19d8a121ce581499d7b701668' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid` FROM `b_user` WHERE `uemail` = '564265135@qq.com' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2016-04-09T13:22:31+08:00 ] 127.0.0.1 /Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012407s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-04-09T14:19:31+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011678s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000821s ]
+
+[ 2016-04-09T14:19:42+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2016-04-09T14:38:23+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0004s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000852s ]
+
+[ 2016-04-09T14:38:37+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=10 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2016-04-09T14:41:03+08:00 ] 127.0.0.1 /Home/Goods/category.html?tid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_type` WHERE `tid` = 0  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\GoodsController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) AND `gtypeid` = 0  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `b_goods`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined index: gtypeid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\2d4e2009b13538603a7bd8695213c8c3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-04-09T14:41:04+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: select * from b_type where tid=10 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 2 AND ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001793s ]
+
+[ 2016-04-09T14:41:07+08:00 ] 127.0.0.1 /Home/Goods/category.html?tid=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `b_type` WHERE `tid` = 0  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined offset: 0 D:\Lanseria\Documents\php\backpacker\Application\Home\Controller\GoodsController.class.php 第 8 行.
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) AND `gtypeid` = 0  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_goods`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined index: gtypeid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\2d4e2009b13538603a7bd8695213c8c3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2016-04-09T14:41:13+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.1362s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 2  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0743s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=10 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 2 AND ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0550s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: tid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\ed4d5129098f7dda825552190427329b.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000495s ]
+
+[ 2016-04-09T14:42:26+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 2  [ RunTime:0.0003s ]
+SQL: UPDATE `b_goods` SET `gview`=gview+3 WHERE `gid` = 2 [ RunTime:0.0467s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=10 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000656s ]
+
+[ 2016-04-09T14:42:29+08:00 ] 127.0.0.1 /Home/Goods/category.html?tid=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `b_type` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `b_type` WHERE `tid` = 10  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) AND `gtypeid` = 10  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: gtypeid D:\Lanseria\Documents\php\backpacker\Application\Runtime\Cache\Home\2d4e2009b13538603a7bd8695213c8c3.php 第 139 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2016-04-09T14:42:30+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 23  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0002s ]
+SQL: select * from b_type where tid=10 [ RunTime:0.0002s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 23 AND ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2016-04-09T14:42:36+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2016-04-09T14:42:38+08:00 ] 127.0.0.1 /Home/Goods/product.html?gid=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 14  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `b_user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `b_user` WHERE `uid` = 1  [ RunTime:0.0003s ]
+SQL: select * from b_type where tid=1 [ RunTime:0.0003s ]
+SQL: SELECT * FROM `b_goods` WHERE `gid` = 14 AND ( gis_selloff=0 ) LIMIT 4   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0005s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011643s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2016-04-09T14:43:59+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `b_goods` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time DESC  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `b_goods` WHERE ( gis_selloff=0 ) ORDER BY gcreate_time ASC LIMIT 7   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `b_vcart` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `b_vcart` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `b_vcart` WHERE `uid` = 1  [ RunTime:0.0006s ]
+SQL: SELECT SUM(gprice) AS tp_sum FROM `b_vcart` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010200s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
