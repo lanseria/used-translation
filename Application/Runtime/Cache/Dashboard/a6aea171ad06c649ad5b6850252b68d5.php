@@ -193,7 +193,7 @@
                       <div class="well well-sm">
                         <button type="button" class="close" data-dismiss="alert">&times;</button>
                         &nbsp;
-                        <div class="inline middle blue bigger-110"> Your profile is 70% complete </div>
+                        <div class="inline middle blue bigger-110"> 修改与填写的你信息 </div>
 
                         &nbsp; &nbsp; &nbsp;
                         <div style="width:200px;" data-percent="70%" class="inline middle no-margin progress progress-striped active">
@@ -204,16 +204,10 @@
                       <div class="space"></div>
 
                       <form class="form-horizontal">
+                      <input type="hidden" name="uid" id="uid" value="<?php echo ($usermsg["uid"]); ?>" />
                         <div class="tabbable">
                           <ul class="nav nav-tabs padding-16">
                             <li class="active">
-                              <a data-toggle="tab" href="#edit-basic">
-                                <i class="green icon-edit bigger-125"></i>
-                                基本信息
-                              </a>
-                            </li>
-
-                            <li>
                               <a data-toggle="tab" href="#edit-password">
                                 <i class="blue icon-key bigger-125"></i>
                                 修改密码
@@ -222,114 +216,7 @@
                           </ul>
 
                           <div class="tab-content profile-edit-tab-content">
-                            <div id="edit-basic" class="tab-pane in active">
-                              <h4 class="header blue bolder smaller">基本</h4>
-
-                              <div class="row">
-                                <div class="col-xs-12 col-sm-4">
-                                  <input type="file" />
-                                </div>
-
-                                <div class="vspace-xs"></div>
-
-                                <div class="col-xs-12 col-sm-8">
-                                  <div class="form-group">
-                                    <label class="col-sm-4 control-label no-padding-right" for="form-field-username">Username</label>
-
-                                    <div class="col-sm-8">
-                                      <input class="col-xs-12 col-sm-10" type="text" id="form-field-username" placeholder="Username" value="alexdoe" />
-                                    </div>
-                                  </div>
-
-                                  <div class="space-4"></div>
-
-                                  <div class="form-group">
-                                    <label class="col-sm-4 control-label no-padding-right" for="form-field-first">Name</label>
-
-                                    <div class="col-sm-8">
-                                      <input class="input-small" type="text" id="form-field-first" placeholder="First Name" value="Alex" />
-                                      <input class="input-small" type="text" id="form-field-last" placeholder="Last Name" value="Doe" />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <hr />
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-date">Birth Date</label>
-
-                                <div class="col-sm-9">
-                                  <div class="input-medium">
-                                    <div class="input-group">
-                                      <input class="input-medium date-picker" id="form-field-date" type="text" data-date-format="dd-mm-yyyy" placeholder="dd-mm-yyyy" />
-                                      <span class="input-group-addon">
-                                        <i class="icon-calendar"></i>
-                                      </span>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="space-4"></div>
-
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right">Gender</label>
-
-                                <div class="col-sm-9">
-                                  <label class="inline">
-                                    <input name="form-field-radio" type="radio" class="ace" />
-                                    <span class="lbl"> Male</span>
-                                  </label>
-
-                                  &nbsp; &nbsp; &nbsp;
-                                  <label class="inline">
-                                    <input name="form-field-radio" type="radio" class="ace" />
-                                    <span class="lbl"> Female</span>
-                                  </label>
-                                </div>
-                              </div>
-
-                              <div class="space-4"></div>
-
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-comment">Comment</label>
-
-                                <div class="col-sm-9">
-                                  <textarea id="form-field-comment"></textarea>
-                                </div>
-                              </div>
-
-                              <div class="space"></div>
-                              <h4 class="header blue bolder smaller">联系方式</h4>
-
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-email">Email</label>
-
-                                <div class="col-sm-9">
-                                  <span class="input-icon input-icon-right">
-                                    <input type="email" id="form-field-email" value="" placeholder="example@qq.com" />
-                                    <i class="icon-envelope"></i>
-                                  </span>
-                                </div>
-                              </div>
-
-                              <div class="space-4"></div>
-
-                              <div class="form-group">
-                                <label class="col-sm-3 control-label no-padding-right" for="form-field-phone">Phone</label>
-
-                                <div class="col-sm-9">
-                                  <span class="input-icon input-icon-right">
-                                    <input class="input-medium input-mask-phone" type="text" id="form-field-phone" />
-                                    <i class="icon-phone icon-flip-horizontal"></i>
-                                  </span>
-                                </div>
-                              </div>
-                              <div class="space"></div>
-                              <div class="space-4"></div>
-                            </div>
-
-                            <div id="edit-password" class="tab-pane">
+                            <div id="edit-password" class="tab-pane in active">
                               <div class="space-10"></div>
 
                               <div class="form-group">
@@ -355,7 +242,7 @@
 
                         <div class="clearfix form-actions">
                           <div class="col-md-offset-3 col-md-9">
-                            <button class="btn btn-info" type="button">
+                            <button class="btn btn-info" id="btn-save" type="button">
                               <i class="icon-ok bigger-110"></i>
                               Save
                             </button>
@@ -490,187 +377,208 @@
 
 
 
-      <!-- inline scripts related to this page -->
-      <script type="text/javascript">
-        jQuery(function($) {
-          $('#user-profile-3').find('input[type=file]').ace_file_input({
-            style:'well',
-            btn_choose:'Change avatar',
-            btn_change:null,
-            no_icon:'icon-picture',
-            thumbnail:'large',
-            droppable:true,
-            before_change: function(files, dropped) {
-              var file = files[0];
-              if(typeof file === "string") {
-                if(! (/\.(jpe?g|png|gif)$/i).test(file) ) return false;
-              }
-              else {
-                var type = $.trim(file.type);
-                if( ( type.length > 0 && ! (/^image\/(jpe?g|png|gif)$/i).test(type) ) || ( type.length == 0 && ! (/\.(jpe?g|png|gif)$/i).test(file.name) )) return false;
-                if( file.size > 110000 ) {return false; }
-              }
-              return true;
-            }
-          }).end().find('button[type=reset]').on(ace.click_event, function(){
-            $('#user-profile-3 input[type=file]').ace_file_input('reset_input');
-          })
-          .end().find('.date-picker').datepicker().next().on(ace.click_event, function(){
-            $(this).prev().focus();
-          })
-          $('.input-mask-phone').mask('999-9999-9999');
-          $('[data-toggle="buttons"] .btn').on('click', function(e){
-            var target = $(this).find('input[type=radio]');
-            var which = parseInt(target.val());
-            $('.user-profile').parent().addClass('hide');
-            $('#user-profile-'+which).parent().removeClass('hide');
-          });
-        });
-      </script>
-      <script type="text/javascript">
-        jQuery(function($) {
-          $('.easy-pie-chart.percentage').each(function(){
-            var $box = $(this).closest('.infobox');
-            var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
-            var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
-            var size = parseInt($(this).data('size')) || 50;
-            $(this).easyPieChart({
-              barColor: barColor,
-              trackColor: trackColor,
-              scaleColor: false,
-              lineCap: 'butt',
-              lineWidth: parseInt(size/10),
-              animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
-              size: size
-            });
-          })
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+ jQuery(function($) {
+  $('#btn-save').click(function(){
+    var pass1 = $('#form-field-pass1').val();
+    var pass2 = $('#form-field-pass2').val();
+    if(pass2 != pass1)
+      alert('两次密码不一致，请重新输入');
+    else{
+      var url = "<?php echo U('Dashboard/Ajax/motifypwd');?>";
+      var data = {"uid":$('#uid').val(),"pwd": pass1};
+      var success = function(response){
+        if(response)
+          alert('已修改');
+        else
+          alert('修改失败');
+      }
+      $.post(url, data ,success, "json");
+    }
+  })
+});
+</script>
+<script type="text/javascript">
+  jQuery(function($) {
+    $('#user-profile-3').find('input[type=file]').ace_file_input({
+      style:'well',
+      btn_choose:'Change avatar',
+      btn_change:null,
+      no_icon:'icon-picture',
+      thumbnail:'large',
+      droppable:true,
+      before_change: function(files, dropped) {
+        var file = files[0];
+        if(typeof file === "string") {
+          if(! (/\.(jpe?g|png|gif)$/i).test(file) ) return false;
+        }
+        else {
+          var type = $.trim(file.type);
+          if( ( type.length > 0 && ! (/^image\/(jpe?g|png|gif)$/i).test(type) ) || ( type.length == 0 && ! (/\.(jpe?g|png|gif)$/i).test(file.name) )) return false;
+          if( file.size > 110000 ) {return false; }
+        }
+        return true;
+      }
+    }).end().find('button[type=reset]').on(ace.click_event, function(){
+      $('#user-profile-3 input[type=file]').ace_file_input('reset_input');
+    })
+    .end().find('.date-picker').datepicker().next().on(ace.click_event, function(){
+      $(this).prev().focus();
+    })
+    $('.input-mask-phone').mask('999-9999-9999');
+    $('[data-toggle="buttons"] .btn').on('click', function(e){
+      var target = $(this).find('input[type=radio]');
+      var which = parseInt(target.val());
+      $('.user-profile').parent().addClass('hide');
+      $('#user-profile-'+which).parent().removeClass('hide');
+    });
+  });
+</script>
+<script type="text/javascript">
+  jQuery(function($) {
+    $('.easy-pie-chart.percentage').each(function(){
+      var $box = $(this).closest('.infobox');
+      var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
+      var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
+      var size = parseInt($(this).data('size')) || 50;
+      $(this).easyPieChart({
+        barColor: barColor,
+        trackColor: trackColor,
+        scaleColor: false,
+        lineCap: 'butt',
+        lineWidth: parseInt(size/10),
+        animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
+        size: size
+      });
+    })
 
-          $('.sparkline').each(function(){
-            var $box = $(this).closest('.infobox');
-            var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
-            $(this).sparkline('html', {tagValuesAttribute:'data-values', type: 'bar', barColor: barColor , chartRangeMin:$(this).data('min') || 0} );
-          });
-          var placeholder = $('#piechart-placeholder').css({'width':'90%' , 'min-height':'150px'});
-          var data = [
-          { label: "social networks",  data: 38.7, color: "#68BC31"},
-          { label: "search engines",  data: 24.5, color: "#2091CF"},
-          { label: "ad campaigns",  data: 8.2, color: "#AF4E96"},
-          { label: "direct traffic",  data: 18.6, color: "#DA5430"},
-          { label: "other",  data: 10, color: "#FEE074"}
-          ]
-          function drawPieChart(placeholder, data, position) {
-            $.plot(placeholder, data, {
-              series: {
-                pie: {
-                  show: true,
-                  tilt:0.8,
-                  highlight: {
-                    opacity: 0.25
-                  },
-                  stroke: {
-                    color: '#fff',
-                    width: 2
-                  },
-                  startAngle: 2
-                }
-              },
-              legend: {
-                show: true,
-                position: position || "ne", 
-                labelBoxBorderColor: null,
-                margin:[-30,15]
-              }
-              ,
-              grid: {
-                hoverable: true,
-                clickable: true
-              }
-            })
+    $('.sparkline').each(function(){
+      var $box = $(this).closest('.infobox');
+      var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
+      $(this).sparkline('html', {tagValuesAttribute:'data-values', type: 'bar', barColor: barColor , chartRangeMin:$(this).data('min') || 0} );
+    });
+    var placeholder = $('#piechart-placeholder').css({'width':'90%' , 'min-height':'150px'});
+    var data = [
+    { label: "social networks",  data: 38.7, color: "#68BC31"},
+    { label: "search engines",  data: 24.5, color: "#2091CF"},
+    { label: "ad campaigns",  data: 8.2, color: "#AF4E96"},
+    { label: "direct traffic",  data: 18.6, color: "#DA5430"},
+    { label: "other",  data: 10, color: "#FEE074"}
+    ]
+    function drawPieChart(placeholder, data, position) {
+      $.plot(placeholder, data, {
+        series: {
+          pie: {
+            show: true,
+            tilt:0.8,
+            highlight: {
+              opacity: 0.25
+            },
+            stroke: {
+              color: '#fff',
+              width: 2
+            },
+            startAngle: 2
           }
-          drawPieChart(placeholder, data);
-          placeholder.data('chart', data);
-          placeholder.data('draw', drawPieChart);
-          var previousPoint = null;
+        },
+        legend: {
+          show: true,
+          position: position || "ne", 
+          labelBoxBorderColor: null,
+          margin:[-30,15]
+        }
+        ,
+        grid: {
+          hoverable: true,
+          clickable: true
+        }
+      })
+    }
+    drawPieChart(placeholder, data);
+    placeholder.data('chart', data);
+    placeholder.data('draw', drawPieChart);
+    var previousPoint = null;
 
-          placeholder.on('plothover', function (event, pos, item) {
-            if(item) {
-              if (previousPoint != item.seriesIndex) {
-                previousPoint = item.seriesIndex;
-                var tip = item.series['label'] + " : " + item.series['percent']+'%';
-              }
-            } else {
-              previousPoint = null;
-            }
-          });
-          var d1 = [];
-          for (var i = 0; i < Math.PI * 2; i += 0.5) {
-            d1.push([i, Math.sin(i)]);
-          }
+    placeholder.on('plothover', function (event, pos, item) {
+      if(item) {
+        if (previousPoint != item.seriesIndex) {
+          previousPoint = item.seriesIndex;
+          var tip = item.series['label'] + " : " + item.series['percent']+'%';
+        }
+      } else {
+        previousPoint = null;
+      }
+    });
+    var d1 = [];
+    for (var i = 0; i < Math.PI * 2; i += 0.5) {
+      d1.push([i, Math.sin(i)]);
+    }
 
-          var d2 = [];
-          for (var i = 0; i < Math.PI * 2; i += 0.5) {
-            d2.push([i, Math.cos(i)]);
-          }
+    var d2 = [];
+    for (var i = 0; i < Math.PI * 2; i += 0.5) {
+      d2.push([i, Math.cos(i)]);
+    }
 
-          var d3 = [];
-          for (var i = 0; i < Math.PI * 2; i += 0.2) {
-            d3.push([i, Math.tan(i)]);
-          }
-          var sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'220px'});
-          $.plot("#sales-charts", [
-            { label: "Domains", data: d1 },
-            { label: "Hosting", data: d2 },
-            { label: "Services", data: d3 }
-            ], {
-              hoverable: true,
-              shadowSize: 0,
-              series: {
-                lines: { show: true },
-                points: { show: true }
-              },
-              xaxis: {
-                tickLength: 0
-              },
-              yaxis: {
-                ticks: 10,
-                min: -2,
-                max: 2,
-                tickDecimals: 3
-              },
-              grid: {
-                backgroundColor: { colors: [ "#fff", "#fff" ] },
-                borderWidth: 1,
-                borderColor:'#555'
-              }
-            });
+    var d3 = [];
+    for (var i = 0; i < Math.PI * 2; i += 0.2) {
+      d3.push([i, Math.tan(i)]);
+    }
+    var sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'220px'});
+    $.plot("#sales-charts", [
+      { label: "Domains", data: d1 },
+      { label: "Hosting", data: d2 },
+      { label: "Services", data: d3 }
+      ], {
+        hoverable: true,
+        shadowSize: 0,
+        series: {
+          lines: { show: true },
+          points: { show: true }
+        },
+        xaxis: {
+          tickLength: 0
+        },
+        yaxis: {
+          ticks: 10,
+          min: -2,
+          max: 2,
+          tickDecimals: 3
+        },
+        grid: {
+          backgroundColor: { colors: [ "#fff", "#fff" ] },
+          borderWidth: 1,
+          borderColor:'#555'
+        }
+      });
 
-          $('.dialogs,.comments').slimScroll({
-            height: '300px'
-          });
-          var agent = navigator.userAgent.toLowerCase();
-          if("ontouchstart" in document && /applewebkit/.test(agent) && /android/.test(agent))
-            $('#tasks').on('touchstart', function(e){
-              var li = $(e.target).closest('#tasks li');
-              if(li.length == 0)return;
-              var label = li.find('label.inline').get(0);
-              if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
-            });
+    $('.dialogs,.comments').slimScroll({
+      height: '300px'
+    });
+    var agent = navigator.userAgent.toLowerCase();
+    if("ontouchstart" in document && /applewebkit/.test(agent) && /android/.test(agent))
+      $('#tasks').on('touchstart', function(e){
+        var li = $(e.target).closest('#tasks li');
+        if(li.length == 0)return;
+        var label = li.find('label.inline').get(0);
+        if(label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation() ;
+      });
 
-          $('#tasks').sortable({
-            opacity:0.8,
-            revert:true,
-            forceHelperSize:true,
-            placeholder: 'draggable-placeholder',
-            forcePlaceholderSize:true,
-            tolerance:'pointer',
-            stop: function( event, ui ) {$(ui.item).css('z-index', 'auto');}
-          });
-          $('#tasks').disableSelection();
-          $('#tasks input:checkbox').removeAttr('checked').on('click', function(){
-            if(this.checked) $(this).closest('li').addClass('selected');
-            else $(this).closest('li').removeClass('selected');
-          });
-        })
-      </script>
-    </body>
-    </html>
+    $('#tasks').sortable({
+      opacity:0.8,
+      revert:true,
+      forceHelperSize:true,
+      placeholder: 'draggable-placeholder',
+      forcePlaceholderSize:true,
+      tolerance:'pointer',
+      stop: function( event, ui ) {$(ui.item).css('z-index', 'auto');}
+    });
+    $('#tasks').disableSelection();
+    $('#tasks input:checkbox').removeAttr('checked').on('click', function(){
+      if(this.checked) $(this).closest('li').addClass('selected');
+      else $(this).closest('li').removeClass('selected');
+    });
+  })
+</script>
+</body>
+</html>

@@ -178,7 +178,7 @@
           <li class="col-sm-3 first">
             <div class="product">
               <div class="thumbnail">
-              <a href="product.html"><img src="__PUBLIC__/pic/{$vo.gimgarray}" alt=""></a>
+              <a href="{:U('Home/Goods/product')}?gid={$vo.gid}"><img src="__PUBLIC__/pic/{$vo.gimgarray}" alt=""></a>
                 <a href="javascript:addCart({$vo.gid});" class="add-to-cart" title="Add to Cart">
                   <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x"></i>

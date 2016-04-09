@@ -54,7 +54,7 @@
           <div class="collapse navbar-collapse top-nav">
             <ul class="nav navbar-nav">
               <li><a href="<?php echo U('Home/Index/about');?>">关于</a></li>
-              <li><a href="<?php echo U('Home/Index/blog');?>">博客</a></li>
+              <!--<li><a href="<?php echo U('Home/Index/blog');?>">博客</a></li>-->
               <li><a href="<?php echo U('Home/Index/contact');?>">联系我们</a></li>
               
               <?php if(isset($_SESSION['logineduser'])): ?><li><a href="<?php echo U('/Dashboard/Index/index');?>?uid=<?php echo (session('logineduserid')); ?>">欢迎您,<?php echo (session('logineduser')); ?>!</a></li>
@@ -142,7 +142,8 @@
     <div class="gap-20"></div>
     <!-- ========== MAP START ========== -->
     <!-- Google Map Script -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoRMxiPsqJ9SUuaK1KsCAjd3gqnecjlBw&amp;sensor=false"></script>
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoRMxiPsqJ9SUuaK1KsCAjd3gqnecjlBw&amp;sensor=false"></script>-->
+    <script type="text/javascript" src="/Public/js/googlemap.js"></script>
     <script type="text/javascript">
       function initialize() {
 
