@@ -65,7 +65,7 @@
           <ul class="nav ace-nav">
             <li class="light-blue">
               <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                <img class="nav-user-photo" src="__PUBLIC__/assets/avatars/user.jpg" alt="Jason's Photo" />
+                <img class="nav-user-photo" src="__PUBLIC__/assets/{$usermsg['uavatar']}" alt="Jason's Photo" />
                 <span class="user-info">
                   <small>欢迎光临,</small>
                   {$usermsg['uname']}
@@ -108,7 +108,7 @@
         </script>
         <ul class="nav nav-list">
           <li class="{$gac}">
-            <a href="{:U('/Dashboard/Index/index')}?uid={$usermsg['uid']}">
+            <a href="{:U('/Dashboard/Index/index')}">
               <i class="icon-dashboard"></i>
               <span class="menu-text"> 个人中心 </span>
             </a>
@@ -116,21 +116,21 @@
 
 
           <li class="{$cac}">
-            <a href="{:U('/Dashboard/Goods/see')}?uid={$usermsg['uid']}" class="dropdown-toggle">
+            <a href="{:U('/Dashboard/Goods/see')}" class="dropdown-toggle">
               <i class="icon-list"></i>
               <span class="menu-text"> 查看已发布的 </span>
             </a>
           </li>
 
           <li class="{$fac}">
-            <a href="{:U('/Dashboard/Goods/publiced')}?uid={$usermsg['uid']}" class="dropdown-toggle">
+            <a href="{:U('/Dashboard/Goods/publiced')}" class="dropdown-toggle">
               <i class="icon-edit"></i>
               <span class="menu-text"> 发布宝贝信息 </span>
             </a>
           </li>
 
           <li class="{$aac}">
-            <a href="{:U('/Dashboard/Index/about')}?uid={$usermsg['uid']}" class="dropdown-toggle">
+            <a href="{:U('/Dashboard/Index/about')}" class="dropdown-toggle">
               <i class="icon-tag"></i>
               <span class="menu-text"> 控制台 </span>
             </a>

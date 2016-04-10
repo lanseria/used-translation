@@ -2,6 +2,21 @@
 namespace Home\Controller;
 use Think\Controller;
 class AjaxController extends Controller {
+	public function returnQuestion(){
+		$mgid = I('get.mgid');
+		$this->ajaxReturn(D('vmessage')->where('gid='.$mgid)->select());
+	}
+	public function addQuestion(){
+		$mgid = I('post.mgid');
+		$muid = I('post.muid');
+		$mcontent = I('post.mcontent');
+		$r = D('message')->addMessage($mgid, $muid, $mcontent);
+		if($r){
+			$this->ajaxReturn(true);
+		}else{
+			$this->ajaxReturn(false);
+		}
+	}
 	public function addCart(){
 		if(session('?logineduserid')){
 			$gid = I('post.gid');//intval

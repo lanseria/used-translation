@@ -4,9 +4,11 @@ use Think\Controller;
 class GoodsController extends Controller {
 	public function see(){
     if(session('?logineduserid')){
-      $uid = I('get.uid');
-      $usermsg = D('User')->where(array('uid' => $uid))->select();
-      $goodsmsg = D('goods')->order('gcreate_time desc')->where(array('uid' => $uid,'gis_selloff'=>0))->select();
+      $uid = session('logineduserid');
+      $condition['guid'] = $uid;
+      $condition['gis_selloff'] = 0;
+      $goodsmsg = D('goods')->where($condition)->order('gcreate_time desc')->select();
+      $usermsg = D('user')->where(array('uid' => $uid))->select();
       $this->assign('goodsmsg',$goodsmsg);
       $this->assign('usermsg',$usermsg[0]);
       $this->assign('cac','active');
@@ -42,12 +44,6 @@ class GoodsController extends Controller {
         }else{
           foreach($info as $k => $file){
             $gimgarray[$k]=$file['savepath'].$file['savename'];
-          //   $file_mini='./Public/pic/'.$file['savepath'].'mini/'.$file['savename'];
-          //   $image = new \Think\Image();
-          //   $image->open($gimgarray[$k]);
-          //   $info1 = $image->thumb(150, 150)->save($file_mini);
-          //   $gtimgarray[$k] = $file_mini;
-          // //unlink('./public/pic/'.$file);
           }
         }
         foreach ($gimgarray as $k => $path) {
@@ -67,7 +63,7 @@ class GoodsController extends Controller {
         $typemsg = D('type')->select();
         $this->assign('typemsg',$typemsg);
 
-        $uid = I('get.uid');
+        $uid = session('logineduserid');
         $usermsg = D('User')->where(array('uid' => $uid))->select();
         $this->assign('usermsg',$usermsg[0]);
         $this->assign('fac','active');
@@ -107,7 +103,7 @@ class GoodsController extends Controller {
         $typemsg = D('type')->select();
         $this->assign('typemsg',$typemsg);
 
-        $uid = I('get.uid');
+        $uid = session('logineduserid');
         $usermsg = D('User')->where(array('uid' => $uid))->select();
         $this->assign('usermsg',$usermsg[0]);
         $this->assign('fac','active');

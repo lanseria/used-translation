@@ -73,7 +73,10 @@
     <!-- Nav tabs -->
     <ul class="nav nav-tabs product-tabs">
       <li class="active"><a href="#description" data-toggle="tab">描述</a></li>
-      <li><a href="#reviews" data-toggle="tab">评论 (3)</a></li>
+      <present name="Think.session.logineduser">
+        <li><a href="#reviews" data-toggle="tab">评论 ({$mcount})</a></li>
+        <else />
+      </present>
     </ul>
 
     <!-- Tab panes -->
@@ -81,104 +84,43 @@
       <div class="tab-pane active" id="description">
         <p>{$goodsmsg.gdetail}</p>
       </div>
-      <div class="tab-pane" id="reviews">
+      <present name="Think.session.logineduser">
+        <div class="tab-pane" id="reviews">
 
-        <div id="reviews">
-          <ol class="commentlist">
-
-            <li class="comment">
-              <div class="comment_container">
-                <img src="http://placehold.it/64x64" class="avatar">
-                <div class="comment-text">
-                  <div class="start-rating">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
+          <div id="reviews">
+            <ol class="commentlist">
+              <volist name="msglist" id="msgvo">
+                <li class="comment">
+                  <div class="comment_container">
+                    <img src="__PUBLIC__/assets/{$msgvo.uavatar}" class="avatar">
+                    <div class="comment-text">
+                      <h5 class="meta">{$msgvo.uname}<span>&mdash; {$msgvo.mcreate_time}</span></h5>                
+                      <p>{$msgvo.mcontent}</p>
+                    </div>
                   </div>
-                  <h5 class="meta">James Koster <span>&mdash; June 7, 2013</span></h5>                
-                  <p>Really happy with this print. The colors are great, and the paper quality is good too.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="comment">
-              <div class="comment_container">
-                <img src="http://placehold.it/64x64" class="avatar">
-                <div class="comment-text">
-                  <div class="start-rating">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                  </div>
-                  <h5 class="meta">Cobus Bester <span>&mdash; June 7, 2013</span></h5>                
-                  <p>You only get the picture, not the person holding it, something they don’t mention in the description, now I’ve got to find my own person.</p>
-                </div>
-              </div>
-            </li>
-
-            <li class="comment">
-              <div class="comment_container">
-                <img src="http://placehold.it/64x64" class="avatar">
-                <div class="comment-text">
-                  <div class="start-rating">
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                  </div>
-                  <h5 class="meta">Stuart <span>&mdash; June 7, 2013</span></h5>                
-                  <p>This is a fantastic quality print and is happily hanging framed on my wall now.</p>
-                </div>
-              </div>
-            </li>
-
-          </ol>
+                </li>
+              </volist>
+            </ol>
+          </div>
+          <hr>
+          <div id="review_form">
+            <h3 id="reply-title" class="comment-reply-title">问问</h3>
+            <p class="comment-form-comment"><textarea name="review" id="question" class="form-control" cols="30" rows="5" placeholder="Your Question"></textarea></p>
+            <p class="form-submit"><button class="btn btn-config btn-lg" onclick="addQuestion({$goodsmsg['gid']},{$uid});">提交</button></p>
+          </div>
         </div>
-
-        <hr>
-
-        <div id="review_form">
-          <h3 id="reply-title" class="comment-reply-title">Add a Review</h3>
-          <form action="#" id="commentform" class="comment-form">
-            <div class="row">
-              <p class="comment-form-author col-sm-4">
-                <input type="text" placeholder="Author *" class="form-control">
-              </p>
-              <p class="comment-form-email col-sm-4">
-                <input type="email" placeholder="Email *" class="form-control">
-              </p>
-              <p class="comment-form-rating col-sm-4">
-                <select class="form-control">
-                  <option value="0">Your Rating</option>
-                  <option value="0">Perfect &mdash; 5*</option>
-                  <option value="0">Good &mdash; 4*</option>
-                  <option value="0">Average &mdash; 3*</option>
-                  <option value="0">Not That Bad &mdash; 2*</option>
-                  <option value="0">Very Poor &mdash; 1*</option>
-                </select>
-              </p>                  
-            </div>
-            <p class="comment-form-comment"><textarea name="review" id="review" class="form-control" cols="30" rows="5" placeholder="Your Review"></textarea></p>
-            <p class="form-submit"><input type="submit" class="btn btn-config btn-lg" name="proceed" value="Post Review"></p>
-          </form>
-        </div>
-
-      </div>
+        <else />
+      </present>
     </div>
 
     <div class="related">
-      <h2>You May Also Like</h2>
+      <h2>你可能还喜欢这些</h2>
       <ul class="products row">
         <volist name="goodsmsg4" id="vo">
           <li class="col-sm-3 first">
             <div class="product">
               <div class="thumbnail">
-              <a href="{:U('Home/Goods/product')}?gid={$vo.gid}"><img src="__PUBLIC__/pic/{$vo.gimgarray}" alt=""></a>
+                <a href="{:U('Home/Goods/product')}?gid={$vo.gid}"><img src="__PUBLIC__/pic/{$vo.gimgarray}" alt=""></a>
                 <a href="javascript:addCart({$vo.gid});" class="add-to-cart" title="Add to Cart">
                   <span class="fa-stack fa-2x">
                     <i class="fa fa-circle fa-stack-2x"></i>

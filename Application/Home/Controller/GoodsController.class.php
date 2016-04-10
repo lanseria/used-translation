@@ -35,24 +35,31 @@ class GoodsController extends Controller {
 			$gid=1;
 		}
 		$goodsmsg = D('goods')->where(array('gid' => $gid))->select();
-		//增加流量次数 并延迟60秒
-        D('goods')->where(array('gid' => $gid))->setInc('gview',1,60);
+		//增加流量次数 !!!!用延迟会发生错误。。。。。并延迟60秒
+        $r = D('goods')->addview($gid);
 
 		$uname = D('user')->where(array('uid'=>$goodsmsg[0]['guid']))->select();
 		$this->assign('uname',$uname[0]);
+
+		$msglist = D('vmessage')->where('gid='.$gid)->select();
+		$mcount = D('vmessage')->where('gid='.$gid)->count();
+		if(empty($mcount))
+			$mcount = 0;
+		$this->assign('msglist',$msglist);
+		$this->assign('mcount',$mcount);
 
 		$goodsimgs = $goodsmsg[0]['gimgarray'];
 		$goodsimgsarr = explode('?',$goodsimgs);
 		$this->assign('goodsmsg',$goodsmsg[0]);
 		$this->assign('goodsimgsarr',$goodsimgsarr);
-		$type = new \Think\Model();
-		$typename = $type->query('select * from b_type where tid='.$goodsmsg[0]['gtypeid']);
-		$this->assign('typename',$typename[0]['tname']);
-		$this->assign('tid',$typename[0]['tid']);
-		$goodsmsg4 = D('goods')->where('gis_selloff=0')->limit(4)->select();
+		$type = D('type')->where(array('tid'=>$goodsmsg[0]['gtypeid']))->select();
+		$this->assign('typename',$type[0]['tname']);
+		$this->assign('tid',$type[0]['tid']);
+		$goodsmsg4 = D('goods')->where('gis_selloff=0')->order('RAND()')->limit(4)->select();//SELECT * FROM `table` ORDER BY RAND() LIMIT 5 这个随机自己琢磨
 		$this->assign('goodsmsg4',$goodsmsg4);
 
 		if(session('?logineduserid')){
+			$this->assign('uid',session('logineduserid'));
 			$cartnum = D('vcart')->where(array('uid'=>session('logineduserid')))->count();
 			$cartmsg = D('vcart')->where(array('uid'=>session('logineduserid')))->select();
 			$sumPrice = D('vcart')->sum('gprice');

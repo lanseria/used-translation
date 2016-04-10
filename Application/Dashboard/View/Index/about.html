@@ -66,6 +66,16 @@
               </div>
               <div class="stat stat-important">4%</div>
             </div>
+            <div class="infobox infobox-red  ">
+              <div class="infobox-icon">
+                <i class="icon-comments"></i>
+              </div>
+
+              <div class="infobox-data">
+                <span class="infobox-data-number">{$goodsmessage}</span>
+                <div class="infobox-content">评论</div>
+              </div>
+            </div>
 
             <div class="infobox infobox-orange2  ">
               <div class="infobox-chart">
@@ -143,7 +153,7 @@
                     </thead>
 
                     <tbody>
-                      <volist name="goodsmsg" id="vo">
+                      <volist name="goodsmsg" id="vo" empty="没有宝贝发布">
                         <tr>
                           <td>{$vo.gname}</td>
                           <td>

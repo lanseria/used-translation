@@ -20,7 +20,7 @@
   <link rel="icon" href="__PUBLIC__/favicon.ico">
 </head>
 <body>
-  <header id="header" class="navbar-fixed-top">
+  <header id="header" class="">
     <div id="top-bar">
       <div class="container">
         <nav id="language-selector">
@@ -139,7 +139,7 @@
 
 
 <div id="copyright">
-<div class="container">&copy; Copyright Limonplayer 2016 | All Rights Reserved | Designed by Lanseria</a></div>
+  <div class="container">&copy; Copyright Limonplayer 2016 | All Rights Reserved | Designed by Lanseria</a></div>
   <ul class="bs-docs-footer-links text-muted">
     <li><a href="{:U('Home/Index/index')}">Home</a></li>
     <li>·</li>
@@ -167,7 +167,7 @@
     <ul class="cart_list">
       <volist name="cartmsg" id="cartvo" empty="暂时没有货物">
         <li>
-          <a href="{:U('/Home/Goods/product')}?gid={$cartvo.gid}">
+          <a href="{:U('Home/Goods/product')}?gid={$cartvo.gid}">
             <img alt="" style="width: 60px;" src="__PUBLIC__/pic/{$cartvo.gimgarray}">
             {$cartvo.gname}
           </a>
@@ -264,19 +264,42 @@
 <script src="__PUBLIC__/js/main.js"></script>
 <script type="text/javascript">
   jQuery(function($){
+    var isMobile = {  
+      Android: function() {  
+        return navigator.userAgent.match(/Android/i) ? true : false;  
+      },  
+      BlackBerry: function() {  
+        return navigator.userAgent.match(/BlackBerry/i) ? true : false;  
+      },  
+      iOS: function() {  
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true : false;  
+      },  
+      Windows: function() {  
+        return navigator.userAgent.match(/IEMobile/i) ? true : false;  
+      },  
+      any: function() {  
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  
+      }  
+    }; 
+    if( isMobile.any()) 
+      $(".banner").hide();
     var imglogo=$(".img-config"); 
     var win=$(window); 
     var sc=$(document);
     win.scroll(function(){
       if(sc.scrollTop()>=60){
         imglogo.removeClass("img-config");
-        imglogo.addClass("small-logo"); 
+        imglogo.addClass("small-logo");
+        $("#header").addClass("navbar-fixed-top");
+        $("section").css({"margin-top":"200px"});
         $("ul.navbar-right>li").addClass("navtext");
         $("ul.navbar-right>li>a").height(70);
         $("ul.navbar-right>li>a").css({"line-height":"70px"});
       }else{
        imglogo.removeClass("small-logo");
        imglogo.addClass("img-config");
+       $("#header").removeClass("navbar-fixed-top");
+       $("section").css({"margin-top":"20px"});
        $("ul.navbar-right>li").removeClass("navtext");
        $("ul.navbar-right>li>a").height(110);
        $("ul.navbar-right>li>a").css({"line-height":"110px"});
@@ -285,6 +308,42 @@
   });
 </script>
 <script type="text/javascript">
+  function addQuestion($gid,$guid){
+    var url = "{:U('Home/Ajax/addQuestion')}";
+    var data = {"mgid":$gid,"muid":$guid,"mcontent":$('#question').val()};
+    var success = function(response){
+      if(response){
+        alert('提交成功');
+        $.ajax({
+          url: "{:U('Home/Ajax/returnQuestion')}?mgid="+$gid,
+          type: "get",
+          dataType: "json",
+          success: function (data) {
+            var html_inter = '';
+            for(var i = 0; i < data.length; i++)
+            {
+              html_inter += '<li class="comment"><div class="comment_container"><img src="__PUBLIC__/assets/';
+              html_inter += data[i]['uavatar'];
+              html_inter += '" class="avatar"><div class="comment-text"><h5 class="meta">';
+              html_inter += data[i]['uname'];
+              html_inter += '<span>&mdash; ';
+              html_inter += data[i]['mcreate_time'];
+              html_inter += '</span></h5><p>';
+              html_inter += data[i]['mcontent'];
+              html_inter += '</p></div></div></li>';
+            }
+            $(".commentlist").empty();
+            $(".commentlist").append(html_inter);
+            
+          }
+        });
+
+      }else{
+        alert('提交失败');
+      }
+    }
+    $.post(url, data ,success, "json");
+  }
   function addCart($gid){
     //ajax请求php脚本完成书库的添加 b_cart
     var url = "{:U('Home/Ajax/addCart')}";
@@ -305,6 +364,23 @@
           success: function (data) {
             $('#icnum').html(data['cartnum']);
             $('.amount').html(data['sumPrice']);
+            var html_inter = '';
+            for(var i = 0; i < data['cartmsg'].length; i++)
+            {
+              html_inter += '<li><a href="'+'{:U('Home/Goods/product')}'+'?gid=';
+              html_inter += data['cartmsg'][i]['gid'];
+              html_inter += '"><img alt="" style="width: 60px;" src="__PUBLIC__/pic/';
+              html_inter += data['cartmsg'][i]['gimgarray'];
+              html_inter += '">';
+              html_inter += data['cartmsg'][i]['gname'];
+              html_inter += '</a><span class="quantity">';
+              html_inter += data['cartmsg'][i]['cnum'];
+              html_inter += ' × <span class="amount">￥';
+              html_inter += data['cartmsg'][i]['gprice'];
+              html_inter += '</span></span></li>';
+            }
+            $(".cart_list").empty();
+            $(".cart_list").append(html_inter);
           }
         });
       }
