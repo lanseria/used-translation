@@ -1271,8 +1271,8 @@ tr.cart-subtotal > * {
 	#main-nav .navbar-nav > li > a {
 		padding-top: 0;
 		padding-bottom: 0;
-		line-height: 110px;
-		height: 110px;
+		line-height: 65px;
+		height: 65px;
 	}
 
 }

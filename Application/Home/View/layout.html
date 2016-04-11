@@ -17,22 +17,16 @@
   <link href="__PUBLIC__/css/style.css" rel="stylesheet">
   <link href="__PUBLIC__/css/config.css" rel="stylesheet">
   <link href="__PUBLIC__/css/docs.min.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="__PUBLIC__/logo-apple-144.png">
   <link rel="icon" href="__PUBLIC__/favicon.ico">
 </head>
 <body>
   <header id="header" class="">
     <div id="top-bar">
       <div class="container">
-        <nav id="language-selector">
-          <ul class="nav nav-pills">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chinese <b class="caret"></b></a>
-              <ul role="menu" class="dropdown-menu">
-                <li><a href="#">English</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+        <div class="nav navbar-left" style="position: absolute; top: -10px;">
+          <a class="navbar-brand" href="http://www.limonplayer.cn/" target="_blank"><img alt="Brand" src="__PUBLIC__/apple-touch-icon.png" style="width: 40px;display: inline-block; margin-right: 10px;">LimonPlayer</a>
+        </div>
         <nav id="shopping-cart">
           <a href="#">
             <i class="icon-shopping-cart"></i> 爱包
@@ -291,18 +285,14 @@
         imglogo.removeClass("img-config");
         imglogo.addClass("small-logo");
         $("#header").addClass("navbar-fixed-top");
-        $("section").css({"margin-top":"200px"});
+        $("section").css({"margin-top":"150px"});
         $("ul.navbar-right>li").addClass("navtext");
-        $("ul.navbar-right>li>a").height(70);
-        $("ul.navbar-right>li>a").css({"line-height":"70px"});
       }else{
        imglogo.removeClass("small-logo");
        imglogo.addClass("img-config");
        $("#header").removeClass("navbar-fixed-top");
        $("section").css({"margin-top":"20px"});
        $("ul.navbar-right>li").removeClass("navtext");
-       $("ul.navbar-right>li>a").height(110);
-       $("ul.navbar-right>li>a").css({"line-height":"110px"});
      }
    })
   });
