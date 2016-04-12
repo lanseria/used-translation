@@ -24,9 +24,10 @@
   <header id="header" class="">
     <div id="top-bar">
       <div class="container">
-        <div class="nav navbar-left" style="position: absolute; top: -10px;">
+        <div class="nav navbar-left" style="position: absolute; top: -5px;">
           <a class="navbar-brand" href="http://www.limonplayer.cn/" target="_blank"><img alt="Brand" src="__PUBLIC__/apple-touch-icon.png" style="width: 40px;display: inline-block; margin-right: 10px;">LimonPlayer</a>
         </div>
+
         <nav id="shopping-cart">
           <a href="#">
             <i class="icon-shopping-cart"></i> 爱包
@@ -47,6 +48,14 @@
           </div>
           <div class="collapse navbar-collapse top-nav">
             <ul class="nav navbar-nav">
+              <li>
+              <form class="navbar-form navbar-left" style="margin: 0 auto;" role="search" action="{:U('Home/Goods/searchgoods')}" method="get">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search" name="keyword">
+                  </div>
+                  <button type="submit" class="btn btn-default">Search</button>
+                </form>
+              </li>
               <li><a href="{:U('Home/Index/about')}">关于</a></li>
               <!--<li><a href="{:U('Home/Index/blog')}">博客</a></li>-->
               <li><a href="{:U('Home/Index/contact')}">联系我们</a></li>
@@ -81,7 +90,7 @@
                 <li><a href="{:U('/Home/Goods/category')}?tid=1">语言类</a></li>
                 <li><a href="{:U('/Home/Goods/category')}?tid=2">理工科类</a></li>
                 <li><a href="{:U('/Home/Goods/category')}?tid=3">文学类</a></li>
-                <li><a href="{:U('/Home/Goods/category')}?tid=4">闲暇类</a></li>
+                <li><a href="{:U('/Home/Goods/category')}?tid=4">艺术类</a></li>
               </ul>
             </li>
             <li class="dropdown">

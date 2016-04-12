@@ -132,7 +132,8 @@ blockquote cite {
 #top-bar nav a {
 	font-family: "微软雅黑",Arial,sans-serif;
 	padding: 0;
-	font-size: inherit;
+	font-size: 16px;
+	line-height: 32px;
 	background: none;
 }
 #top-bar nav a:hover,

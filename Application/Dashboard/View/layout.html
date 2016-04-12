@@ -136,7 +136,41 @@
             </a>
 
           </li>
+          <eq name="Think.session.loginedusertype" value="0">
 
+            <li class="{$lac}">
+              <a href="#" class="dropdown-toggle">
+                <i class="icon-desktop"></i>
+                <span class="menu-text"> 管理 </span>
+
+                <b class="arrow icon-angle-down"></b>
+              </a>
+
+              <ul class="submenu">
+                <li class="{$sac}">
+                  <a href="{:U('/Dashboard/admin/users')}">
+                    <i class="icon-double-angle-right"></i>
+                    查看用户
+                  </a>
+                </li>
+
+                <li class="{$eac}">
+                  <a href="{:U('/Dashboard/admin/goods')}">
+                    <i class="icon-double-angle-right"></i>
+                    查看二手
+                  </a>
+                </li>
+
+                <li class="{$zac}">
+                  <a href="{:U('/Dashboard/admin/analyze')}">
+                    <i class="icon-double-angle-right"></i>
+                    统计
+                  </a>
+                </li>
+                <else /> 
+              </eq>
+            </ul>
+          </li>
         </ul><!-- /.nav-list -->
 
         <div class="sidebar-collapse" id="sidebar-collapse">

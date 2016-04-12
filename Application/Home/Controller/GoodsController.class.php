@@ -73,6 +73,29 @@ class GoodsController extends Controller {
 		$this->assign('cartmsg',$cartmsg);
 		$this->display();
 	}
+	public function searchgoods(){
+		$keyword = I('get.keyword');
+		$goodslist = D('goods');
+		$map['gname'] = array('like',"%".$keyword."%");
+		$where['gis_selloff'] = 0;
+		$goodsmsg = $goodslist->where($map)->where($where)->select();
+		$this->assign('goodsmsg',$goodsmsg);
+
+		if(session('?logineduserid')){
+			$this->assign('uid',session('logineduserid'));
+			$cartnum = D('vcart')->where(array('uid'=>session('logineduserid')))->count();
+			$cartmsg = D('vcart')->where(array('uid'=>session('logineduserid')))->select();
+			$sumPrice = D('vcart')->sum('gprice');
+        }
+        else{
+            $cartnum = 0;
+            $sumPrice = "????";
+        }
+		$this->assign('sumPrice',$sumPrice);
+		$this->assign('cartnum',$cartnum);
+		$this->assign('cartmsg',$cartmsg);
+		$this->display();
+	}
 	public function user(){
 		$guid = I('get.uid');
 		$uname = D('user')->where(array('uid'=>$guid))->select();

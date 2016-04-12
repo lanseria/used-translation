@@ -46,4 +46,12 @@ class GoodsModel extends Model{
         else
             return false;
     }
+    public function sellon($gid){
+        $data['gis_selloff'] = 0;
+        $this->where(array('gid'=>$gid))->create($data);
+        if($this->save())
+            return true;
+        else
+            return false;
+    }
 }

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50626
 File Encoding         : 65001
 
-Date: 2016-04-11 20:35:58
+Date: 2016-04-12 19:36:01
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -47,17 +47,17 @@ CREATE TABLE `b_goods` (
   `gadname` varchar(255) NOT NULL,
   `gadtel` varchar(255) NOT NULL,
   `gimgarray` varchar(255) NOT NULL,
-  `gtimgarray` varchar(255) DEFAULT NULL,
   `gdetail` text NOT NULL,
   `gcreate_time` datetime NOT NULL,
   `gis_selloff` int(11) unsigned NOT NULL DEFAULT '0',
   `gview` int(11) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`gid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_goods
 -- ----------------------------
+INSERT INTO `b_goods` VALUES ('1', 'ZZhen女王节新品韩版个性哭脸loser印花宽松短袖T恤半截袖打底衫', '6', '78.00', '85.00', '1', '张超', '188858395625', '2016-04-12/570c49ee63bb6.jpg?2016-04-12/570c49ee6afc9.jpg?2016-04-12/570c49ee6c618.jpg?2016-04-12/570c49ee6de6a.jpg?2016-04-12/570c49ee6f083.jpg', '看起来就很萌的一款短袖T 经典的小圆领，非常的方便穿脱的哦 袖子也是常规的短袖长度，不管是做内搭还是外穿都是没问题的 衣身上卫衣的团就是左侧的难过表情图案哦 看起来真的超萌的 这款衣服的面料也是好的没话说 优质的棉质面料 很亲肤的那种，还很柔软 深蓝、白色、黄色三色可选。', '2016-04-12 09:05:51', '0', '0');
 
 -- ----------------------------
 -- Table structure for b_message
@@ -117,12 +117,14 @@ CREATE TABLE `b_user` (
   `uemail` varchar(255) NOT NULL,
   `upwd` varchar(255) NOT NULL,
   `uavatar` varchar(255) NOT NULL DEFAULT 'avatars/avatar.png',
+  `utype` int(255) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`uid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of b_user
 -- ----------------------------
+INSERT INTO `b_user` VALUES ('1', 'Lanseria', '564265135@qq.com', '837cd2d7fc81976168c62096f71ecebb', 'avatars/user.jpg', '0');
 
 -- ----------------------------
 -- View structure for b_vcart

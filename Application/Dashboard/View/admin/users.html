@@ -1,0 +1,152 @@
+<div class="main-content">
+	<div class="breadcrumbs" id="breadcrumbs">
+		<script type="text/javascript">
+			try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+		</script>
+
+		<ul class="breadcrumb">
+			<li>
+				<i class="icon-home home-icon"></i>
+				<a href="{:U('Manager/Index/index')}">Manager</a>
+			</li>
+
+			<li>
+				<a href="{:U('Manager/Admin/users')}">Admin</a>
+			</li>
+			<li class="active" id="ptitle">users</li>
+		</ul><!-- .breadcrumb -->
+
+		<div class="nav-search" id="nav-search">
+			<form class="form-search">
+				<span class="input-icon">
+					<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+					<i class="icon-search nav-search-icon"></i>
+				</span>
+			</form>
+		</div><!-- #nav-search -->
+	</div>
+	<script type="text/javascript">
+		var $path_assets = "__PUBLIC__/assets";//this will be used in loading jQuery UI if needed!
+	</script>
+	<div class="page-content">
+		<div class="page-header">
+			<h1>
+				users
+				<small class="ptitle">
+					<i class="icon-double-angle-right"></i>
+					{$msg[0].pname}
+				</small>
+			</h1>
+		</div><!-- /.page-header -->
+
+		<hr />
+		<div class="row">
+			<div class="col-xs-12">
+				<!-- PAGE CONTENT BEGINS -->
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="table-responsive">
+							<table id="sample-table-1" class="table table-striped table-bordered table-hover">
+								<thead>
+									<tr>
+										<th class="center">
+											<label>
+												<input type="checkbox" class="ace" />
+												<span class="lbl">UID</span>
+											</label>
+										</th>
+										<th>NickName</th>
+										<th>Email</th>
+										<th class="">Age</th>
+										<th>
+											<i class="icon-time bigger-110 hidden-360"></i>
+											Sign_in Time
+										</th>
+										<th class="hidden-480">S_Number</th>
+										<th class="hidden-480">Colloge</th>
+										<th class="hidden-480">Class</th>
+										<th class="hidden-480">Tel</th>
+										<th>CURD</th>
+									</tr>
+								</thead>
+
+								<tbody>
+									<volist name="userlist" id="vo" empty="暂时没有数据">
+										<tr>
+											<td class="center">
+												<label>
+													<input type="checkbox" class="ace" />
+													<span class="lbl">{$vo.uid}</span>
+												</label>
+											</td>
+											<td>
+												<a href="{:U('Home/Goods/user')}?uid={$vo.uid}" id="gritter-regular{$vo.uid}">{$vo.uname}</a>
+											</td>
+											<td>{$vo.uemail}</td>
+											<td class="hidden-480">{$vo.mage}</td>
+											<td>{$vo.mcreate_date}</td>
+											<td>{$vo.mnumber}</td>
+											<td class="hidden-480">
+												<span class="label label-sm label-inverse arrowed-in">{$vo.colloge_name}</span>
+											</td>
+											<td class="hidden-480">
+												<span class="label label-sm label-success">{$vo.class_name}</span>
+											</td>
+											<td>{$vo.mtel}</td>
+											<td>
+												<div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+													<button class="btn btn-xs btn-info">
+														<i class="icon-edit bigger-120"></i>
+													</button>
+													<a class="btn btn-xs btn-danger" href="del?uid={$vo.uid}">
+														<i class="icon-trash bigger-120"></i>
+													</a>
+												</div>
+
+												<div class="visible-xs visible-sm hidden-md hidden-lg">
+													<div class="inline position-relative">
+														<button class="btn btn-minier btn-primary dropdown-toggle" data-toggle="dropdown">
+															<i class="icon-cog icon-only bigger-110"></i>
+														</button>
+
+														<ul class="dropdown-menu dropdown-only-icon dropdown-yellow pull-right dropdown-caret dropdown-close">
+															<li>
+																<a href="#" class="tooltip-info" data-rel="tooltip" title="View">
+																	<span class="blue">
+																		<i class="icon-zoom-in bigger-120"></i>
+																	</span>
+																</a>
+															</li>
+
+															<li>
+																<a href="#" class="tooltip-success" data-rel="tooltip" title="Edit">
+																	<span class="green">
+																		<i class="icon-edit bigger-120"></i>
+																	</span>
+																</a>
+															</li>
+
+															<li>
+																<a href="#" class="tooltip-error" data-rel="tooltip" title="Delete">
+																	<span class="red">
+																		<i class="icon-trash bigger-120"></i>
+																	</span>
+																</a>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</td>
+										</tr>
+									</volist>
+								</tbody>
+							</table>
+						</div><!-- /.table-responsive -->
+					</div><!-- /span -->
+				</div><!-- /row -->
+				<div class="hr hr-18 dotted hr-double"></div>
+			</div><!-- /.col -->
+		</div><!-- /.row -->
+	</div><!-- /.page-content -->
+</div><!-- /.main-content -->

@@ -44,6 +44,7 @@ class UserModel extends Model
         $r = $this->where($cond)->getField('uid');
         return $r;
     }
+    
     public function getImgByUid($uid)
     {
         $cond['uid']=$uid;

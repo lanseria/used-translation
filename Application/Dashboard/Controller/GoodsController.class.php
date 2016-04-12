@@ -121,5 +121,12 @@ class GoodsController extends Controller {
     else
       $this->error('下架失败','javascript:window.location.href=document.referrer;',1);
   }
+  public function sellonG(){
+    $gid = I('get.gid');
+    if(D('goods')->sellon($gid))
+      $this->success('已重新上架','javascript:window.location.href=document.referrer;');
+    else
+      $this->error('上架失败','javascript:window.location.href=document.referrer;',1);
+  }
 }
 ?>
