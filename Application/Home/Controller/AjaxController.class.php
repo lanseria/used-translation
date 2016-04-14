@@ -45,7 +45,9 @@ class AjaxController extends Controller {
 		$uid = session('logineduserid');
 		$cartnum = D('vcart')->where(array('uid'=>session('logineduserid')))->count();
 		$cartmsg = D('vcart')->where(array('uid'=>session('logineduserid')))->select();
-		$sumPrice = D('vcart')->sum('gprice');
+		$sumPrice = D('vcart')->where(array('uid'=>session('logineduserid')))->sum('gprice');
+		if(empty($sumPrice))
+				$sumPrice = "????";
 		$data['cartnum'] = $cartnum;
 		$data['cartmsg'] = $cartmsg;
 		$data['sumPrice'] = $sumPrice;

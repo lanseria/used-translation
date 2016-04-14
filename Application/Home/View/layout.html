@@ -49,7 +49,7 @@
           <div class="collapse navbar-collapse top-nav">
             <ul class="nav navbar-nav">
               <li>
-              <form class="navbar-form navbar-left" style="margin: 0 auto;" role="search" action="{:U('Home/Goods/searchgoods')}" method="get">
+                <form class="navbar-form navbar-left" style="margin: 0 auto;" role="search" action="{:U('Home/Goods/searchgoods')}" method="get">
                   <div class="form-group">
                     <input type="text" class="form-control" placeholder="Search" name="keyword">
                   </div>
@@ -226,18 +226,18 @@
           <h4 class="modal-title" id="myModalLabel">注册</h4>
         </div>
         <div class="modal-body">
-          <form role="form" action="{:U('Home/User/register')}" method="post">
+          <form role="form" action="{:U('Home/User/register')}" method="post" id="regform">
             <div class="form-group">
-              <input type="nickname" class="form-control input-lg" id="exampleInputEmail" name="uname" placeholder="Nickname">
+              <input type="nickname" class="form-control input-lg" id="regUname" name="uname" placeholder="Nickname">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control input-lg" id="exampleInputEmail" name="uemail" placeholder="Email">
+              <input type="email" class="form-control input-lg" id="regEmail" name="uemail" placeholder="Email">
             </div>
             <div class="form-group">
-              <input type="password" class="form-control input-lg" id="exampleInputPassword" name="upwd" placeholder="Password">
+              <input type="password" class="form-control input-lg" id="regPassword" name="upwd" placeholder="Password">
             </div>
             <div class="form-group">
-              <input type="password" class="form-control input-lg" id="exampleInputPassword" name="ucpwd" placeholder="Confirm_The_Password">
+              <input type="password" class="form-control input-lg" id="regCPassword" placeholder="Confirm_The_Password">
             </div>
             <div class="checkbox pull-left">
               <label>
@@ -245,7 +245,7 @@
               </label>
             </div>
             <div class="pull-right">
-              <button type="submit" class="btn btn-lg btn-config">Sign In</button>
+              <button class="btn btn-lg btn-config" id="formToConfirm">Sign In</button>
             </div>
           </form>
         </div>
@@ -267,6 +267,42 @@
 <script src="__PUBLIC__/js/main.js"></script>
 <script type="text/javascript">
   jQuery(function($){
+    $('#formToConfirm').click(function(){
+      if($('#regUname').val()==""){
+        alert('请填写用户名');
+        return false;
+      }
+      else{
+        if($('#regEmail').val()==""){
+          alert('请填写邮箱');
+          return false;
+        }
+        else{
+          if($('#regPassword').val()==""){
+            alert('请填写密码');
+            return false;
+          }
+          else{
+            if($('#regPassword').val()==""){
+              alert('请填写密码');
+              return false;
+            }
+            else{
+              if($('#regCPassword').val()==""){
+                alert('请填写确认密码');
+                return false;
+              }
+              else{
+                if($('#regPassword').val()!=$('#regCPassword').val()){
+                  alert('请确认密码一致');
+                  return false;
+                }
+              }
+            }
+          }
+        }
+      }
+    })
     var isMobile = {  
       Android: function() {  
         return navigator.userAgent.match(/Android/i) ? true : false;  

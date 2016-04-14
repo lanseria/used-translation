@@ -33,23 +33,21 @@ class UserController extends Controller {
 	public function register()
 	{
 		if (IS_POST) {
-
             // 1.创建数据表操作对象
 			$userTable = D('user');
             // 2.获取表单数据
-			$nickname = I('post.uemail');
+			$uemail = I('post.uemail');
 			$pwd = I('post.upwd');
-			$realname = I('post.uname');
-			$captcha = I('post.captcha');
-
+			$uname = I('post.uname');
+			//$captcha = I('post.captcha');
 			// if (Captcha::checkCaptcha($captcha, Captcha::REGISTR_CAPTCHA)) {
-   //              // 3.执行注册
-			$r = $userTable->doUserRegister(trim($nickname), $pwd, trim($realname));
+			// 3.执行注册
+			$r = $userTable->doUserRegister(trim($uemail), $pwd, trim($uname));
 			if ($r)
 			{
-				session('logineduser',$nickname);
-				session('logineduserid',$userTable->getUserIdByUserName($nickname));
-				session('logineduserimgurl',$userimgurl);
+				session('logineduser',$uemail);
+				session('logineduserid',$userTable->getUserIdByUserName($uemail));
+				//session('logineduserimgurl',$userimgurl);
 				$this->success('注册并登录成功,','/Home/Index/index');
 			}
 			// }else {
