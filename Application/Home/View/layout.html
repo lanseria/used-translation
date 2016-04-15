@@ -273,7 +273,7 @@
       else
         $('#Qty').val(parseInt($('#Qty').val())-1);
     })
-    var gcounts = {$goodsmsg.gcounts};
+    var gcounts = $('#gcounts').val();
     $('.plus').click(function(){
       if(parseInt($('#Qty').val())+1>gcounts)
         alert('商家数目只有这么大');
