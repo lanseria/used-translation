@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50626
 File Encoding         : 65001
 
-Date: 2016-04-12 19:36:01
+Date: 2016-04-15 14:06:09
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,6 +41,7 @@ CREATE TABLE `b_goods` (
   `gid` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `gname` varchar(255) NOT NULL,
   `gtypeid` int(11) unsigned NOT NULL,
+  `gcounts` int(11) NOT NULL,
   `gprice` decimal(10,2) NOT NULL,
   `goldprice` decimal(10,2) NOT NULL,
   `guid` int(11) unsigned NOT NULL,
@@ -57,7 +58,7 @@ CREATE TABLE `b_goods` (
 -- ----------------------------
 -- Records of b_goods
 -- ----------------------------
-INSERT INTO `b_goods` VALUES ('1', 'ZZhen女王节新品韩版个性哭脸loser印花宽松短袖T恤半截袖打底衫', '6', '78.00', '85.00', '1', '张超', '188858395625', '2016-04-12/570c49ee63bb6.jpg?2016-04-12/570c49ee6afc9.jpg?2016-04-12/570c49ee6c618.jpg?2016-04-12/570c49ee6de6a.jpg?2016-04-12/570c49ee6f083.jpg', '看起来就很萌的一款短袖T 经典的小圆领，非常的方便穿脱的哦 袖子也是常规的短袖长度，不管是做内搭还是外穿都是没问题的 衣身上卫衣的团就是左侧的难过表情图案哦 看起来真的超萌的 这款衣服的面料也是好的没话说 优质的棉质面料 很亲肤的那种，还很柔软 深蓝、白色、黄色三色可选。', '2016-04-12 09:05:51', '0', '0');
+INSERT INTO `b_goods` VALUES ('1', 'ZZhen女王节新品韩版个性哭脸loser印花宽松短袖T恤半截袖打底衫', '6', '2', '78.00', '85.00', '1', '张超', '188858395625', '2016-04-12/570c49ee63bb6.jpg?2016-04-12/570c49ee6afc9.jpg?2016-04-12/570c49ee6c618.jpg?2016-04-12/570c49ee6de6a.jpg?2016-04-12/570c49ee6f083.jpg', '看起来就很萌的一款短袖T 经典的小圆领，非常的方便穿脱的哦 袖子也是常规的短袖长度，不管是做内搭还是外穿都是没问题的 衣身上卫衣的团就是左侧的难过表情图案哦 看起来真的超萌的 这款衣服的面料也是好的没话说 优质的棉质面料 很亲肤的那种，还很柔软 深蓝、白色、黄色三色可选。', '2016-04-12 09:05:51', '0', '0');
 
 -- ----------------------------
 -- Table structure for b_message

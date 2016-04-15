@@ -5,9 +5,10 @@ class GoodsModel extends Model{
 	protected $tableName = 'goods';
     // 对象的数据表
     protected $trueTableName = 'b_goods';
-    public function insertG($gname, $gtypeid, $gprice, $goldprice, $guid, $gadname, $gadtel, $gimgarray, $gtimgarray, $gdetail){
+    public function insertG($gname, $gtypeid, $gcounts, $gprice, $goldprice, $guid, $gadname, $gadtel, $gimgarray, $gtimgarray, $gdetail){
     	$data['gname'] = $gname;
     	$data['gtypeid'] = $gtypeid;
+        $data['gcounts'] = $gcounts;
     	$data['gprice'] = $gprice;
     	$data['goldprice'] = $goldprice;
     	$data['guid'] = $guid;

@@ -267,6 +267,19 @@
 <script src="__PUBLIC__/js/main.js"></script>
 <script type="text/javascript">
   jQuery(function($){
+    $('.minus').click(function(){
+      if(parseInt($('#Qty').val())-1<=0)
+        alert('不能小于等于0');
+      else
+        $('#Qty').val(parseInt($('#Qty').val())-1);
+    })
+    var gcounts = {$goodsmsg.gcounts};
+    $('.plus').click(function(){
+      if(parseInt($('#Qty').val())+1>gcounts)
+        alert('商家数目只有这么大');
+      else
+        $('#Qty').val(parseInt($('#Qty').val())+1);
+    })
     $('#formToConfirm').click(function(){
       if($('#regUname').val()==""){
         alert('请填写用户名');

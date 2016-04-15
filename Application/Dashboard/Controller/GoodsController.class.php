@@ -24,6 +24,7 @@ class GoodsController extends Controller {
       if(IS_POST){
         $gname = I('post.gname');
         $gtypeid = I('post.gtypeid');
+        $gcounts = I('post.gcounts');
         $gprice = I('post.gprice');
         $goldprice = I('post.goldprice');
         $guid = session('logineduserid');
@@ -51,7 +52,7 @@ class GoodsController extends Controller {
           $image->thumb(500, 500, 2)->save('./Public/pic/'.$path);
         }
         $gimgstr = implode('?',$gimgarray);
-        $r = D('goods')->insertG($gname, $gtypeid, $gprice, $goldprice, $guid, $gadname, $gadtel, $gimgstr, $gtimgstr, $gdetail);
+        $r = D('goods')->insertG($gname, $gtypeid, $gcounts, $gprice, $goldprice, $guid, $gadname, $gadtel, $gimgstr, $gtimgstr, $gdetail);
         if($r){
           $this->success('发布成功');
         }

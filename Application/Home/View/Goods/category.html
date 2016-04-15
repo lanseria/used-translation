@@ -53,11 +53,10 @@
         </aside>
       </div>
 
-      <div class="col-sm-9">
-
+      <div class="col-sm-9 col-xs-12">
         <ul class="products row">
           <volist name="goodsmsg" id="vo" empty="暂时没有数据">
-            <li class="col-sm-4 first">
+            <li class="col-sm-4 col-xs-4 first">
               <div class="product">
                 <div class="thumbnail">
                   <a href="{:U('/Home/Goods/product')}?gid={$vo.gid}"><img src="__PUBLIC__/pic/{$vo.gimgarray}" alt=""></a>
