@@ -81,8 +81,6 @@ class GoodsController extends Controller {
 		//重复内容
         $this->shows();
         //
-		$this->assign('empty','<h2 class="empty">没有你的宝贝的爱包中…………</h2>');
-		$this->assign('bcartmsg',$cartmsg);
 	}
 	public function deleteC(){
 		$cid = I('get.cid');
@@ -103,6 +101,8 @@ class GoodsController extends Controller {
 			$sumPrice = "????";
 		}
 		$this->assign('sumPrice',$sumPrice);
+		$this->assign('empty','<h2 class="empty">没有你的宝贝的爱包中…………</h2>');
+		$this->assign('bcartmsg',$cartmsg);
 		$this->assign('cartnum',$cartnum);
 		$this->assign('cartmsg',$cartmsg);
 		$this->display();
