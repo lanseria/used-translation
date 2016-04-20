@@ -3,8 +3,8 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
     public function index(){
-        $goodsmsg = D('goods')->where('gis_selloff=0')->order('gcreate_time DESC')->select();
-        $newgoodsmsg = D('goods')->where('gis_selloff=0')->order('gcreate_time ASC')->limit(7)->select();
+        $goodsmsg = D('goods')->where('gis_selloff=0')->order('gcreate_time ASC')->select();
+        $newgoodsmsg = D('goods')->where('gis_selloff=0')->order('gcreate_time DESC')->limit(7)->select();
         $this->assign('goodsmsg',$goodsmsg);
         $this->assign('newgoodsmsg',$newgoodsmsg);
         //重复内容

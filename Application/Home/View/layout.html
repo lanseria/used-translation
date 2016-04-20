@@ -24,10 +24,6 @@
   <header id="header" class="">
     <div id="top-bar">
       <div class="container">
-        <div class="nav navbar-left" style="position: absolute; top: -5px;">
-          <a class="navbar-brand" href="http://www.limonplayer.cn/" target="_blank"><img alt="Brand" src="__PUBLIC__/apple-touch-icon.png" style="width: 40px;display: inline-block; margin-right: 10px;">LimonPlayer</a>
-        </div>
-
         <nav id="shopping-cart">
           <a href="#">
             <i class="icon-shopping-cart"></i> 爱包
@@ -331,10 +327,16 @@
       },  
       any: function() {  
         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());  
-      }  
+      } 
     }; 
-    if( isMobile.any()) 
+    if(isMobile.any()) {
       $(".banner").hide();
+      $('.add-to-cart').hide();
+      $('.product_title').css({"font-size":"1.2em"});
+      $('.product').css({"font-size":"0.2em"});
+      $('.hidden-xs').css({"font-size":"0.2em"});
+      $('h3').css({"font-size":"0.2em"});
+    }
     var imglogo=$(".img-config"); 
     var win=$(window); 
     var sc=$(document);

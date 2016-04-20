@@ -1,14 +1,11 @@
 <section id="content">
   <div class="container">
-
     <ol class="breadcrumb">
       <li><a href="{:U('Home/Index/index')}">背包客</a></li>
       <li><a href="{:U('Home/Goods/category')}?tid={$goodsmsg.gtypeid}">{$typename}</a></li>
     </ol>
-
     <div class="row">
       <div class="col-sm-3 sidebar">
-
         <aside class="widget widget_product_categories">
           <h3 class="widget-title">Categories:</h3>
           <ul>
@@ -52,7 +49,6 @@
           </ul>
         </aside>
       </div>
-
       <div class="col-sm-9 col-xs-12">
         <ul class="products row">
           <volist name="goodsmsg" id="vo" empty="暂时没有数据">
@@ -77,10 +73,7 @@
             </li>
           </volist>
         </ul>
-        
       </div>
-
     </div>
-
   </div>
 </section>

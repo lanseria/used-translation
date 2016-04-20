@@ -90,6 +90,7 @@ class GoodsController extends Controller {
 	//重复内容方法
 	private function shows(){
 		if(session('?logineduserid')){
+			$this->assign('uid',session('logineduserid'));
 			$cartnum = D('vcart')->where(array('uid'=>session('logineduserid')))->count();
 			$cartmsg = D('vcart')->where(array('uid'=>session('logineduserid')))->select();
 			$sumPrice = D('vcart')->where(array('uid'=>session('logineduserid')))->sum('gprice');
